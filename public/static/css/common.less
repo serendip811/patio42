@@ -1,0 +1,105 @@
+
+@import "../vendor/tastelab-common-less/desktop.less";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,600,400|Noto+Sans:400,700);
+
+@screen-sm: 320px;
+@screen-sm-1: 319px;
+@screen-md: 768px;
+@screen-md-1: 767px;
+@screen-lg: 1320px;
+@screen-lg-1: 1319px;
+
+.container {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    .screen-md-lg({
+        width: 693px;
+    });
+    .screen-lg({
+        width: 1320px;
+    });
+}
+
+.screen-sm(@callback) {
+    .less-than(@screen-md-1, {
+        @callback();
+    });
+}
+
+.screen-md(@callback) {
+    .greater-than(@screen-md, {
+        @callback();
+    });
+}
+
+.screen-lg(@callback) {
+    .greater-than(@screen-lg, {
+        @callback();
+    });
+}
+
+.screen-md-lg(@callback)  {
+    .between-and(@screen-md, @screen-lg-1, {
+        @callback();
+    });
+}
+
+.background(@url, @x, @y) {
+    background: url(@url) no-repeat;
+    background-size: @x @y;
+    background-position: center;
+}
+
+.background-width-height(@url, @x, @y) {
+    background: url(@url) no-repeat;
+    background-size: @x @y;
+    background-position: center;
+    width: @x;
+    height: @y;
+}
+
+.background-cover-center(@url) {
+    background: url(@url) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.font-copperplate () {
+    font-family: 'Copperplate', 'Copperplate Gothic Light', sans-serif;
+    font-weight: 400;
+}
+.font-osans-normal() {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.font-osans-semibold() {
+    font-family: 'Open Sans Semibold', sans-serif;
+    font-weight: 600;
+}
+.font-osans-bold() {
+    font-family: 'Open Sans Bold', sans-serif;
+    font-weight: 700;
+}
+
+html {
+    font-family: "애플 SD 산돌고딕 Neo", "Apple SD Gothic Neo", "나눔 고딕", "NanumGothic", "맑은 고딕", "Malgun Gothic", "돋움", Dotum, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 0;
+}
+
+a {
+    @screen-lg: 1440px;
+    font-size: 0;
+    &:hover {
+        cursor: default;
+    }
+}

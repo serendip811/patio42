@@ -1,0 +1,41 @@
+
+footer {
+    border-top: 4px solid #fed857;
+    div.container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        .screen-md({
+            margin-top: 40px;
+            margin-bottom: 40px;
+        });
+        text-align: center;
+        div.social {
+            a {
+                display: inline-block;
+                margin: 0 10px;
+                cursor: pointer;
+                &.fb {
+                    .background-width-height('/static/img/facebook.png', 36px, 36px);
+                }
+                &.mail {
+                    .background-width-height('/static/img/mail.png', 36px, 36px);
+                }
+            }
+        }
+        address {
+            margin-top: 30px;
+            font-size: 12px;
+            font-style: normal;
+            line-height: 21px;
+            color: #634f26;
+        }
+        div.copyright {
+            margin-top: 26px;
+            font-size: 12px;
+            .screen-md({
+                margin-top: 36px;
+            });
+            color: #634f26;
+        }
+    }
+}

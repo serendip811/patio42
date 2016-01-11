@@ -1,0 +1,33 @@
+{
+  "name": "kr.co.patio42.www",
+  "version": "0.0.0",
+  "authors": [
+    "june@tastelab.co.kr"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/public/static/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1",
+    "requirejs": "2.1.*",
+    "tastelab-common-less": "https://github.com/tastelab-kr/common-less.git",
+    "respond": "~1.4.2",
+    "bootstrap-css": "2.3.2",
+    "normalize.css": "~3.0.3",
+    "jquery.simpleslider": "~0.0.1",
+    "parallax.js": "~1.3.2",
+    "font-awesome": "~4.3.0",
+    "isotope": "~2.2.0",
+    "pure": "~0.6.0"
+
+  },
+  "devDependencies": {
+    "html5shiv": "~3.7.2"
+  }
+}

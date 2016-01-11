@@ -1,0 +1,209 @@
+<?php
+use Wandu\Template\Syntax\Template;
+
+Template::setLayout('layout/master', [
+    'cssFiles' => [
+        '/static/css/index.css'
+    ],
+    'jsFiles' => [
+        '/static/vendor/isotope/dist/isotope.pkgd.min.js',
+        '/static/vendor/jquery.simpleslider/jquery.simpleslider.min.js',
+        '/static/js/popup.js',
+        'http://openapi.map.naver.com/openapi/naverMap.naver?ver=2.0&key=fd2ca2cdbd4e35830e1aa10c25069f13',
+        '/static/js/map.js',
+        '/static/js/index.js'
+    ]
+]);
+?>
+
+<section id="About">
+    <div class="container">
+        <div class="picture picture-1"><img src="/static/img/About-interior.png" /></div>
+        <div class="content content-1">
+            <div class="thumbnail"><img src="/static/img/About-interior-thumbnail.png" /></div>
+            <div class="text">점심에는 레스토랑으로, 저녁에는 캐주얼바로<br />
+                운영되며 그 외 시간대에는 누구나 편히 쉴 수 있는<br />
+                카페로 즐길 수 있는 복합공간의 파티오42
+            </div>
+        </div>
+        <div class="picture picture-2"><img src="/static/img/About-food.png" /></div>
+        <div class="content content-2">
+            <div class="thumbnail"><img src="/static/img/About-food-thumbnail.png" /></div>
+            <div class="text">독창적인 재료의 다양한 소스와 레시피로<br />
+                흔히 접할 수 없는 이탈리안 가정식 요리들을 선보이는<br />
+                우리들만의 아지트 파티오42
+            </div>
+        </div>
+        <div class="picture picture-3"><img src="/static/img/About-name.png" /></div>
+        <div class="content content-3">
+            <div class="text">"파티오42"는 앞마당을 뜻하는 '파티오'와<br />
+                영화 '은하수를 여행하는 히치하이커를 위한 안내서'의<br />
+                숫자 '42'에서 이름을 따왔습니다.
+            </div>
+        </div>
+        <div class="banner">
+            <div class="thumbnail"><img src="/static/img/About-banner.png" /></div>
+            <div class="text">인생과 우주, 그리고 모든 것에 대한 답을 뜻한다는 숫자 '42'. 우리는 이 숫자처럼 '파티오42'라는 공간이 맛있는 음식과 함게 어떠한 답을 찾아 특별한 순간을 만끽할 수 있는 아지트가 되기를 희망합니다.
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Store">
+    <div class="container">
+        <h2>STORE</h2>
+        <div id="StoreCategoriesMobile">All</div>
+        <div id="StoreCategories" class="">
+            <div class="category active"><a data-filter="*">ALL</a></div>
+            <div class="category"><a data-filter=".origin">PATIO42</a></div>
+            <div class="category"><a data-filter=".thepan">PATIO42 THE PAN</a></div>
+            <div class="category category-last"><a data-filter=".pipub">PATIO42 PIPUB</a></div>
+        </div>
+        <div id="StoreItems">
+<?php foreach ($storePosts as $idx => $post) : ?>
+            <div class="item <?php echo isset($post['extra']['store']['filter']) ? $post['extra']['store']['filter'] : ''; ?>">
+<?php if (isset($post['thumbnail']) && isset($post['thumbnail']['name']) && isset($post['thumbnail']['path'])) : ?>
+                <div class="thumbnail"><img alt="<?php echo $post['thumbnail']['name']; ?>" src="files<?php echo $post['thumbnail']['path']; ?>" /></div>
+<?php endif; ?>
+                <div class="contents">
+                    <div class="category"><?php echo ($post['extra']['store']['filter'] === 'origin') ?
+                            'PATIO42': (($post['extra']['store']['filter'] === 'thepan') ? 'PATIO42 THE PAN' : 'PATIO42 PIPUB'); ?></div>
+                    <div class="title"><?php echo isset($post['title']) ? $post['title'] : ''; ?></div>
+                    <div class="address"><?php echo isset($post['extra']['store']['address']) ?
+                            $post['extra']['store']['address'] : ''; ?><br /><?php echo isset($post['extra']['store']['phone']) ?
+                            $post['extra']['store']['phone'] : ''; ?>
+                    </div>
+                </div>
+                <div class="footer">
+                    <a class="detail" data-target=".popup-<?php echo $idx; ?>" data-map="map-<?php echo $idx; ?>">매장정보 상세보기</a>
+                    <a class="facebook" href="<?php echo isset($post['extra']['store']['facebook']) ?
+                        $post['extra']['store']['facebook'] : ''; ?>" target="_blank">Facebook</a>
+                </div>
+            </div>
+<?php endforeach; ?>
+        </div>
+    </div>
+</section>
+
+<section id="MenuLinks">
+    <h2>MENU</h2>
+    <div class="row">
+        <div class="links-col links-col-1">
+            <div class="logo"><img src="/static/img/MenuLinks-logo-1.png"></div>
+            <a class="view view-1" href="/files/patio42.pdf" target="_blank">VIEW MENU</a>
+        </div>
+        <div class="links-col links-col-2">
+            <div class="logo"><img src="/static/img/MenuLinks-logo-2.png"></div>
+            <a class="view view-2" href="/files/thepan.pdf" target="_blank">VIEW MENU</a>
+        </div>
+        <div class="links-col links-col-3">
+            <div class="logo"><img src="/static/img/MenuLinks-logo-3.png"></div>
+            <a class="view view-3" target="_blank">준비중입니다</a>
+        </div>
+    </div>
+</section>
+
+<section id="Menu">
+    <div class="container">
+        <div class="content">
+            <div class="text text-main">"재료의 신선도는<br />음식의 생명입니다."</div>
+            <div class="text text-sub">파티오42의 바질, 루꼴라, 이태리 파슬리 등 일부 특수 채소는 대전에 위치한 파티오 42 직영농장에서 무농약으로 재배되며 그 외 모든 식재료들은 테이블 위의 건강함을 유지하기 위해 매일 새벽 각 매장으로 직배송됩니다.
+            </div>
+        </div>
+        <div class="picture"></div>
+    </div>
+</section>
+
+<section id="News">
+    <div class="container">
+        <h2>NEWS & EVENT</h2>
+        <div id="NewsItems">
+<?php foreach ($newsPosts as $post) : ?>
+            <div class="item item-1">
+                <div class="thumbnail">
+                    <a href="<?php echo isset($post['extra']['link']) ? $post['extra']['link'] : ''?>" target="_blank">
+<?php if (isset($post['thumbnail']) && isset($post['thumbnail']['path'])) :?>
+                        <img src="/files<?php echo $post['thumbnail']['path']?>" />
+<?php endif ?>
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="title"><?php echo isset($post['title']) ? $post['title'] : ''?></div>
+                </div>
+            </div>
+<?php endforeach ?>
+        </div>
+    </div>
+</section>
+
+<section id="Press">
+    <h2>PRESS</h2>
+    <div class="container">
+        <div class="controller">
+            <a class="button button-press-prev">prev image</a>
+            <a class="button button-press-next">next image</a>
+        </div>
+        <div class="press">
+<?php foreach ($pressPosts as $index => $post) : ?>
+            <div class="press-col press-col-<?php echo $index?> <?php echo $index === 0 ? 'active' : '' ?>">
+                <div class="thumbnail">
+<?php if (isset($post['thumbnail']) & isset($post['thumbnail']['path'])) :?>
+                   <img src="/files<?php echo $post['thumbnail']['path']; ?>" />
+<?php endif; ?>
+                </div>
+                <div class="content">
+                    <div class="title"><?php echo isset($post['title']) ? $post['title'] : ''; ?></div>
+                    <div class="text"><?php echo isset($post['contents']) ? nl2br($post['contents']) : ''; ?></div>
+                    <div class="link"><?php echo isset($post['extra']['url']) ? $post['extra']['url'] : ''?></div>
+                </div>
+                <a class="button-read" href="<?php echo isset($post['extra']['link']) ? $post['extra']['link'] : '#'?>" target="_blank">READ</a>
+            </div>
+<?php endforeach ?>
+        </div>
+    </div>
+</section>
+
+<div class="popups">
+<?php foreach ($storePosts as $idx => $post) : ?>
+    <div class="popup popup-<?php echo $idx; ?>">
+        <a class="close">&times;</a>
+        <div class="container">
+<?php if (!is_null($post['extra']['store']['event']) && $post['extra']['store']['event'] === "1") : ?>
+            <div class="header">
+                <div class="col col-1">
+                    <div class="decoration">EVENT</div>
+                    <div class="title"><?php echo isset($post['extra']['event']['eventTitle']) ?
+                            $post['extra']['event']['eventTitle'] : ''; ?></div>
+                    <div class="contents"><?php echo isset($post['extra']['event']['eventContents']) ? nl2br($post['extra']['event']['eventContents']) : ''; ?></div>
+                </div>
+                <div class="col col-2">
+                    <a href="<?php echo isset($post['extra']['event']['eventLink']) ? $post['extra']['event']['eventLink'] : '#'; ?>" class="link" target="_blank">이벤트 보러가기</a>
+                </div>
+            </div>
+<?php endif; ?>
+            <div class="body">
+                <div class="slider">
+                    <div class="thumbnails slides">
+<?php if (isset($post['extra']['event']['eventImage'])) : ?>
+<?php foreach ($post['extra']['event']['eventImage'] as $index => $image) : if (isset($image) && isset($image['name']) && isset($image['path'])) : ?>
+                        <div class="slide slide-<?php echo $index?>"><img src="files<?php echo $image['path']?>" alt="<?php echo $image['name']?>"/></div>
+<?php endif; endforeach; endif; ?>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="title"><?php echo $post['title']; ?></div>
+                    <div class="item address"><?php echo isset($post['extra']['store']['address']) ? $post['extra']['store']['address'] : ''; ?></div>
+                    <div class="item phone"><?php echo isset($post['extra']['store']['phone']) ? $post['extra']['store']['phone'] : ''; ?></div>
+                    <div class="item time"><?php echo isset($post['extra']['store']['time']) ? nl2br($post['extra']['store']['time']) : ''; ?></div>
+                    <div class="item seat"><?php echo isset($post['extra']['store']['seat']) ? $post['extra']['store']['seat'] : ''; ?></div>
+                    <div class="item parking"><?php echo $post['extra']['store']['parking'] === '1' ? '주차 가능' : '주차 불가능'; ?></div>
+                </div>
+                <div id="map-<?php echo $idx; ?>" class="map" data-lat="<?php echo isset($post['extra']['store']['lat']) ?
+                    $post['extra']['store']['lat'] :''; ?>" data-lng="<?php echo isset($post['extra']['store']['lng']) ?
+                    $post['extra']['store']['lng'] : ''; ?>">
+                </div>
+            </div>
+        </div>
+    </div>
+<?php endforeach; ?>
+</div>

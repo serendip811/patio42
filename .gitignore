@@ -1,0 +1,9 @@
+*.css
+composer.lock
+composer.phar
+vendor/
+
+config/database.php
+config.php
+/sessions/*
+/public/files/*
