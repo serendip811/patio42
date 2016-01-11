@@ -1,0 +1,24 @@
+{
+  "name": "tastelab-common-less",
+  "homepage": "https://github.com/tastelab-kr/common-less",
+  "authors": [
+    "Changwan Jun <me@wani.kr>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "9c5d270e75",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "9c5d270e751dc30c327f5343cc86d4d37e009a13"
+  },
+  "_source": "https://github.com/tastelab-kr/common-less.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/tastelab-kr/common-less.git"
+}

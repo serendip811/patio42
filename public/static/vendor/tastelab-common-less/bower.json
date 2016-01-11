@@ -1,0 +1,16 @@
+{
+  "name": "tastelab-common-less",
+  "version": "0.0.0",
+  "homepage": "https://github.com/tastelab-kr/common-less",
+  "authors": [
+    "Changwan Jun <me@wani.kr>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

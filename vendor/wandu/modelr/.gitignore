@@ -1,0 +1,11 @@
+.DS_Store
+.idea
+composer.lock
+
+_test.*
+
+/config
+/vendor
+/docs
+
+example.php

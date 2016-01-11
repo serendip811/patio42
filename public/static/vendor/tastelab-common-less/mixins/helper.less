@@ -1,0 +1,17 @@
+.opacity(@op) {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=@{op})"; // IE-8
+    filter: alpha(opacity=@op); // IE-7
+    opacity: @op / 100; // all-browser
+}
+
+.clearfix() {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.scrolled() {
+    overflow:hidden;
+    overflow-y:scroll !important;
+    -webkit-overflow-scrolling:touch !important;
+}
