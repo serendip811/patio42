@@ -279,8 +279,8 @@ class Post extends BaseController
     {
         if (isset($file) && $file->getError() === 0) {
             $fileName = $file->getClientFileName();
-            $ext = split(".", $fileName)[1];
-            $filePath = tempnam($this->fileRoot, 'post_').'.'.$ext;
+            $ext = explode(".", $fileName);
+            $filePath = tempnam($this->fileRoot, 'post_').'.'.$ext[1];
             $file->moveTo($filePath);
             return [
                 'name' => $fileName,
