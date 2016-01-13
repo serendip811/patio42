@@ -278,8 +278,9 @@ class Post extends BaseController
     protected function fileParser($file)
     {
         if (isset($file) && $file->getError() === 0) {
-            $filePath = tempnam($this->fileRoot, 'post_');
             $fileName = $file->getClientFileName();
+            $ext = split(".", $fileName)[1];
+            $filePath = tempnam($this->fileRoot, 'post_').'.'.$ext;
             $file->moveTo($filePath);
             return [
                 'name' => $fileName,
