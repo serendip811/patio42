@@ -9,7 +9,7 @@ Template::setLayout('layout/master', [
         '/static/vendor/isotope/dist/isotope.pkgd.min.js',
         '/static/vendor/jquery.simpleslider/jquery.simpleslider.min.js',
         '/static/js/popup.js',
-        'http://openapi.map.naver.com/openapi/naverMap.naver?ver=2.0&key=fd2ca2cdbd4e35830e1aa10c25069f13',
+        'http://openapi.map.naver.com/openapi/naverMap.naver?ver=2.0&key=fbd2904bb2de0f3caad4032338fb4a15',
         '/static/js/map.js',
         '/static/js/index.js'
     ]
