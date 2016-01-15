@@ -19,18 +19,16 @@
                 $("div.popups").html(data);
                 var $target = $(".popup-"+id);
 
-                for (var i = 0; i < 7; i++) {
-                    $target.find("div.slides").simpleslider({
-                        controller: true
-                    });
-                }
+                $target.find("div.slides").simpleslider({
+                    controller: true
+                });
 
                 $target.addClass('active').siblings().removeClass('active');
                 if ($target.length) {
                     $('body').addClass('disabled');
                 }
 
-                var currentMap = $(".map-"+id);
+                var currentMap = "map-"+id;
                 if ($('#'+currentMap).children('div.nmap').length < 1) {
                     map ($, currentMap, $('#'+currentMap).data('lat'), $('#'+currentMap).data('lng'));
                 }
