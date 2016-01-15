@@ -40,7 +40,7 @@ Template::setLayout('layout');
                     <label for="formExtra3">Filter</label>
                     origin <input id="formExtra3" type="radio" name="filter" value="origin" <?php if (isset($post['extra']['store']['filter'])) { echo ($post['extra']['store']['filter'] === 'origin') ? 'checked' : ''; } ?> />
                     thepan <input id="formExtra3" type="radio" name="filter" value="thepan" <?php if (isset($post['extra']['store']['filter'])) { echo ($post['extra']['store']['filter'] === 'thepan') ? 'checked' : ''; } ?> />
-                    pipub <input id="formExtra3" type="radio" name="filter" value="pipub" <?php if (isset($post['extra']['store']['filter'])) { echo ($post['extra']['store']['filter'] === 'pipub') ? 'checked' : ''; } ?> />
+                    patiod <input id="formExtra3" type="radio" name="filter" value="patiod" <?php if (isset($post['extra']['store']['filter'])) { echo ($post['extra']['store']['filter'] === 'patiod') ? 'checked' : ''; } ?> />
                 </div>
 
                 <div class="pure-control-group pure-control-group-choice" data-category="[3]">

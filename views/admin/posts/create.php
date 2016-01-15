@@ -42,7 +42,7 @@ Template::setLayout('layout');
                     <label for="formExtra3">Filter</label>
                     origin <input id="formExtra3" type="radio" name="filter" value="origin" checked />
                     thepan <input id="formExtra3" type="radio" name="filter" value="thepan" />
-                    pipub <input id="formExtra3" type="radio" name="filter" value="pipub" />
+                    patiod <input id="formExtra3" type="radio" name="filter" value="patiod" />
                 </div>
 
                 <div class="pure-control-group pure-control-group-choice" data-category="[3]">

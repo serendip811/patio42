@@ -57,7 +57,7 @@ Template::setLayout('layout/master', [
             <div class="category active"><a data-filter="*">ALL</a></div>
             <div class="category"><a data-filter=".origin">PATIO42</a></div>
             <div class="category"><a data-filter=".thepan">PATIO42 THE PAN</a></div>
-            <div class="category category-last"><a data-filter=".pipub">PATIO42 PIPUB</a></div>
+            <div class="category category-last"><a data-filter=".patiod">PATIO D</a></div>
         </div>
         <div id="StoreItems">
 <?php foreach ($storePosts as $idx => $post) : ?>
@@ -67,7 +67,7 @@ Template::setLayout('layout/master', [
 <?php endif; ?>
                 <div class="contents">
                     <div class="category"><?php echo ($post['extra']['store']['filter'] === 'origin') ?
-                            'PATIO42': (($post['extra']['store']['filter'] === 'thepan') ? 'PATIO42 THE PAN' : 'PATIO42 PIPUB'); ?></div>
+                            'PATIO42': (($post['extra']['store']['filter'] === 'thepan') ? 'PATIO42 THE PAN' : 'PATIO D'); ?></div>
                     <div class="title"><?php echo isset($post['title']) ? $post['title'] : ''; ?></div>
                     <div class="address"><?php echo isset($post['extra']['store']['address']) ?
                             $post['extra']['store']['address'] : ''; ?><br /><?php echo isset($post['extra']['store']['phone']) ?
