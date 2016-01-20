@@ -96,10 +96,10 @@ Template::setLayout('layout/master', [
             <div class="logo"><img src="/static/img/MenuLinks-logo-2.png"></div>
             <a class="view view-2" href="/files/thepan.pdf" target="_blank">VIEW MENU</a>
         </div>
-        <div class="links-col links-col-3">
+        <!--div class="links-col links-col-3">
             <div class="logo"><img src="/static/img/MenuLinks-logo-3.png"></div>
             <a class="view view-3" target="_blank">준비중입니다</a>
-        </div>
+        </div-->
     </div>
 </section>
 
