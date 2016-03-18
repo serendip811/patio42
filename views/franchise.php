@@ -13,13 +13,13 @@ Template::setLayout('layout/master', [
 ?>
 
 <section id="about">
+<?php /*
     <div class="change-franchise" style="background-color:white;">
         <div class="button button-patio active">PATIO42</div>
-<?php /*
         <div class="button button-thepan">PATIO42 THE PAN</div>
-*/?>
     </div>
 
+*/?>
     <div class="container container-patio active">
         <div class="title">PATIO42</div>
         <div class="description">파티오42 디자인은 유행을 타지 않도록 엔틱과 모던의 명쾌한 조화로 이루어졌습니다.<br/>돌, 나무, 조명을 적절히 활용하여 우리집 앞마당(Patio) 같은 아늑함을 제공합니다.</div>
