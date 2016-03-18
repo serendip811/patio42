@@ -13,9 +13,11 @@ Template::setLayout('layout/master', [
 ?>
 
 <section id="about">
-    <div class="change-franchise">
+    <div class="change-franchise" style="background-color:white;">
         <div class="button button-patio active">PATIO42</div>
+<?php /*
         <div class="button button-thepan">PATIO42 THE PAN</div>
+*/?>
     </div>
 
     <div class="container container-patio active">
@@ -155,9 +157,11 @@ Template::setLayout('layout/master', [
             <div class="button button-patio active">
                 <a>PATIO42</a>
             </div>
+<?/*
             <div class="button button-thepan">
                 <a>PATIO42 THE PAN</a>
             </div>
+*/?>
         </div>
         <div class="table table-patio active">
             <div class="th">
@@ -176,30 +180,36 @@ Template::setLayout('layout/master', [
                 <div class="td td-title">교육비</div>
                 <div class="td td-detail">주방 조리 교육 및 레시피 전수 / 홀 서비스 교육</div>
                 <div class="td td-standard">600</div>
-                <div class="td td-etc"></div>
+                <div class="td td-etc">전수 창업</div>
             </div>
             <div class="tr">
                 <div class="td td-title">인테리어비</div>
                 <div class="td td-detail">실내 인테리어, 목공사, 타일, 주방, 전기, 조명, 가구 등</div>
-                <div class="td td-standard">6,000</div>
-                <div class="td td-etc">평당 200</div>
+                <div class="td td-standard">5,700</div>
+                <div class="td td-etc">평당 100</div>
             </div>
             <div class="tr">
                 <div class="td td-title">가구류</div>
                 <div class="td td-detail">의자, 탁자, 붙박이 시트 등</div>
-                <div class="td td-standard">800</div>
+                <div class="td td-standard">1,000</div>
                 <div class="td td-etc">야외용 별도</div>
             </div>
             <div class="tr">
                 <div class="td td-title">주방 설비</div>
-                <div class="td td-detail">냉동냉장고, 토핑, 식기세척기, 피자 오븐, 화구 등</div>
+                <div class="td td-detail">냉동냉장고, 토핑, 식기세척기, 화기, 접시류 등</div>
                 <div class="td td-standard">2,500</div>
                 <div class="td td-etc"></div>
             </div>
             <div class="tr">
                 <div class="td td-title">주방 집기 / 홀 물품</div>
-                <div class="td td-detail">접시, 각종 조리기구, 홀 용품 및 판촉물</div>
+                <div class="td td-detail">커피머신, 접시, 각종 조리기구, 홀 용품 등</div>
                 <div class="td td-standard">1,800</div>
+                <div class="td td-etc"></div>
+            </div>
+            <div class="tr">
+                <div class="td td-title">M42 마케팅</div>
+                <div class="td td-detail">오픈 키워드, 블로그, 바이럴 마케팅</div>
+                <div class="td td-standard">400</div>
                 <div class="td td-etc"></div>
             </div>
             <div class="tr tr-pos">
@@ -217,7 +227,7 @@ Template::setLayout('layout/master', [
             <div class="tr tr-result">
                 <div class="td td-title">합계</div>
                 <div class="td td-detail"></div>
-                <div class="td td-standard">12,500</div>
+                <div class="td td-standard">12,800</div>
                 <div class="td td-etc"></div>
             </div>
         </div>
@@ -283,7 +293,7 @@ Template::setLayout('layout/master', [
                 <div class="td td-etc"></div>
             </div>
         </div>
-        <div class="optional"><a>&#42;</a> Optional &#58; 간판, 철거, 어닝, 외장, D/P, 전기 증설, 가스, 소방, 냉난방기, 온수 보일러, 커피머신 등은  매장 실측 후 필요 유무에 따라 추가 산정됨</div>
+        <div class="optional"><a>&#42;</a> Optional &#58; 간판, 철거, 어닝, 외장, D/P, 전기 증설, 가스, 소방, 냉난방기, 온수 보일러 등은  매장 실측 후 필요 유무에 따라 추가 산정됨</div>
     </div>
 </section>
 
