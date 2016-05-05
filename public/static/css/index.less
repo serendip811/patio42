@@ -782,20 +782,29 @@ body.disabled {
                 }
                 div.thumbnail {
                     width: 110px;
-                    height: 110px;
+                    height: 180px;
                     overflow: hidden;
                     .screen-md({
                         width: 100%;
-                        height: 139px;
+                        height: 300px;
+                    });
+                    .screen-lg({
+                        width: 100%;
+                        height: 500px;
                     });
                     a {
                         display: block;
                         overflow: hidden;
                         cursor: pointer;
                         img {
-                            width: 150%;
+                            width: 100%;
                             .screen-md({
                                 width: 100%;
+                                height: 300px;
+                            });
+                            .screen-lg({
+                                width: 100%;
+                                min-height: 500px;
                             });
                         }
                     }
