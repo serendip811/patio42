@@ -64,7 +64,9 @@ This web page has been developed by J.
     </ul>
 </nav>
 
-<section id="Popup" class="active">
+<?php foreach ($popupPosts as $key => $popupPost) :?>
+
+<section class="Popup active" name="popup_<?php echo $popupPost['id']; ?>">
     <a class="close">x</a>
     <div class="container-popup">
         <div class="thumbnail">
@@ -80,6 +82,8 @@ This web page has been developed by J.
         </div>
     </div>
 </section>
+<?php endforeach ?>
+
 
 <?php echo Template::section('main'); ?>
 

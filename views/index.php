@@ -18,7 +18,7 @@ Template::setLayout('layout/master', [
 
 <section id="About">
     <div class="container">
-        <div class="picture picture-1"><img src="/static/img/About-interior.png" /></div>
+	<div class="picture picture-1"><img src="/static/img/About-interior.jpg" /></div>
         <div class="content content-1">
             <div class="thumbnail"><img src="/static/img/About-interior-thumbnail.png" /></div>
             <div class="text">점심에는 레스토랑으로, 저녁에는 캐주얼바로<br />

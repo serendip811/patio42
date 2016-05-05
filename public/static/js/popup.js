@@ -1,16 +1,21 @@
 (function ($) {
     var
         initialize = function () {
-            $('#Popup a.close').bind('click', popupController);
-
-            var cookieData = document.cookie;
-            if (cookieData.indexOf("patioPopup=done") >= 0){
-                $('#Popup').removeClass('active');
-            }
+            $('.Popup a.close').bind('click', popupController);
+            
+            $('.Popup').each(function(){
+                var name = $(this).attr('name');
+                var cookieData = document.cookie;
+                if(cookieData.indexOf("patioPopup_"+name+"=done") >= 0){
+                    $(this).removeClass('active');
+                }
+            });
         },
         popupController = function () {
-            setCookie("patioPopup", "done", 6);
-            $('#Popup').removeClass('active');
+            var popup = $(this).closest('section');
+            var name = popup.attr('name');
+            setCookie("patioPopup_"+name, 'done', 6);
+            popup.removeClass('active');
         },
         setCookie = function (name, value, expirehours) {
             var todayDate = new Date();
