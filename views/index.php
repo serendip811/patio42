@@ -3,15 +3,15 @@ use Wandu\Template\Syntax\Template;
 
 Template::setLayout('layout/master', [
     'cssFiles' => [
-        '/static/css/index.css'
+        '/static/css/index.css?20160505'
     ],
     'jsFiles' => [
         '/static/vendor/isotope/dist/isotope.pkgd.min.js',
         '/static/vendor/jquery.simpleslider/jquery.simpleslider.min.js',
-        '/static/js/popup.js',
+        '/static/js/popup.js?20160505',
         'http://openapi.map.naver.com/openapi/naverMap.naver?ver=2.0&key=31e4d5fd3ada24ea1057920a526149fb',
         '/static/js/map.js',
-        '/static/js/index.js'
+        '/static/js/index.js?20160505'
     ]
 ]);
 ?>

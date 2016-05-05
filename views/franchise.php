@@ -3,11 +3,11 @@ use Wandu\Template\Syntax\Template;
 
 Template::setLayout('layout/master', [
     'cssFiles' => [
-        '/static/css/franchise.css'
+        '/static/css/franchise.css?20160505'
     ],
     'jsFiles' => [
-        '/static/js/popup.js',
-        '/static/js/franchise.js'
+        '/static/js/popup.js?20160505',
+        '/static/js/franchise.js?20160505'
     ]
 ]);
 ?>
