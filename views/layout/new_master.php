@@ -29,13 +29,6 @@ This web page has been developed by J.
     <script src="/static/vendor/respond/dest/respond.min.js"></script>
     <![endif]-->
 
-    <script src="/static/vendor/jquery/dist/jquery.js"></script>
-    <script src="/static/vendor/parallax.js/parallax.min.js"></script>
-    <script src="/static/js/common.js"></script>
-    <?php if (isset($jsFiles)) foreach ($jsFiles as $file) : ?>
-    <script src="<?php echo $file; ?>"></script>
-    <?php endforeach; ?>
-
 </head>
 <body>
 
@@ -107,7 +100,12 @@ This web page has been developed by J.
     </div>
 </footer>
 
-
+<script src="/static/vendor/jquery/dist/jquery.js"></script>
+<script src="/static/vendor/parallax.js/parallax.min.js"></script>
+<script src="/static/js/common.js"></script>
+<?php if (isset($jsFiles)) foreach ($jsFiles as $file) : ?>
+<script src="<?php echo $file; ?>"></script>
+<?php endforeach; ?>
 
 </body>
 </html>
