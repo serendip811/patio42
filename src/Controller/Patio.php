@@ -13,11 +13,25 @@ class Patio extends BaseController
     public function index()
     {
 
-	    $newsPosts = array_reverse($this->repository->where(['category_id' => 1])->all()->toArray());
+        $newsPosts = array_reverse($this->repository->where(['category_id' => 1])->all()->toArray());
         $pressPosts = $this->repository->where(['category_id' => 2])->all();
         $storePosts = $this->repository->where(['category_id' => 3])->all();
         $popupPosts = $this->repository->where(['category_id' => 4])->all();
         return Response::plain($this->view->render('index',
+            compact('newsPosts', 'pressPosts', 'storePosts', 'popupPosts')));
+    }
+
+    /**
+     * @return ResponseInterface
+     */
+    public function new_index()
+    {
+
+        $newsPosts = array_reverse($this->repository->where(['category_id' => 1])->all()->toArray());
+        $pressPosts = $this->repository->where(['category_id' => 2])->all();
+        $storePosts = $this->repository->where(['category_id' => 3])->all();
+        $popupPosts = $this->repository->where(['category_id' => 4])->all();
+        return Response::plain($this->view->render('new_index',
             compact('newsPosts', 'pressPosts', 'storePosts', 'popupPosts')));
     }
 

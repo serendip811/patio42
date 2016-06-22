@@ -5,6 +5,7 @@ use Wandu\Router\Router;
 
 return function (Router $router) {
     $router->get('', 'index@Patio');
+    $router->get('/new', 'new_index@Patio');
     $router->get('/franchise', 'franchise@Patio');
     $router->get('/store_popup/{id}', 'store_popup@Patio');
     $router->group(['prefix' => '/admin', 'middleware' => ['auth@Admin']], function (Router $router) {

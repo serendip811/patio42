@@ -12,6 +12,11 @@
             nextButton: $('a.button-press-next'),
             prevButton: $('a.button-press-prev')
         });
+        $('#Header div.header').simpleslider({
+            controller: true,
+            nextButton: $('a.button-header-next'),
+            prevButton: $('a.button-header-prev')
+        });
 
         $('#StoreItems a.detail').bind('click', function() {
             var id = $(this).data('store-id');
