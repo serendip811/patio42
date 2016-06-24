@@ -32,7 +32,7 @@ Template::setLayout('layout/new_master', [
         <h2># INSTAGRAM</h2>
         <div id="instagram-contents">
             <div data-is data-is-api="http://www.stylistkelseysue.com/instashow/api/"
-                data-is-source="#patio42"
+                data-is-source="#patio42, #patioD, #파티오42, #파티오디, #파티오D"
                 data-is-speed="1000"
                 data-is-auto="5000">
             </div>
