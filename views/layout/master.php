@@ -31,21 +31,11 @@ This web page has been developed by J.
 </head>
 <body>
 
-<header>
-    <div class="background"></div>
-    <a>
-        <img src="/static/img/logo.png" />
-    </a>
-</header>
-
-<div class="nav-toggle">
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
-
 <nav>
     <ul>
+        <li class="tab tab-instagram">
+            <a href="/#Instagram">#PATIO</a>
+        </li>
         <li class="tab tab-about">
             <a href="/#About">ABOUT</a>
         </li>
@@ -63,6 +53,19 @@ This web page has been developed by J.
         </li>
     </ul>
 </nav>
+
+<header>
+    <div class="background"></div>
+    <a>
+        <img src="/static/img/logo.png" />
+    </a>
+</header>
+
+<div class="nav-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
 
 <?php foreach ($popupPosts as $key => $popupPost) :?>
 

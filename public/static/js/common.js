@@ -33,7 +33,7 @@
         target = $('nav');
         return function () {
             if (i == 0) {
-                if (this.pageYOffset >= 851) {
+                if (this.pageYOffset >= 600) {
                     target.addClass('over-height');
                     i = 1;
                 }
@@ -43,7 +43,7 @@
                     target.removeClass('down-invisible');
                 }
             } else {
-                if (this.pageYOffset <= 650) {
+                if (this.pageYOffset <= 570) {
                     target.removeClass('over-height');
                     i = 0;
                 }

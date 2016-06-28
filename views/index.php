@@ -6,6 +6,7 @@ Template::setLayout('layout/master', [
         '/static/css/index.css?20160505'
     ],
     'jsFiles' => [
+        '/static/js/jquery.instashow.packaged.js',
         '/static/vendor/isotope/dist/isotope.pkgd.min.js',
         '/static/vendor/jquery.simpleslider/jquery.simpleslider.min.js',
         '/static/js/popup.js?20160505',
@@ -16,8 +17,22 @@ Template::setLayout('layout/master', [
 ]);
 ?>
 
+<section id="Instagram">
+    <div class="container">
+        <h2># PATIO</h2>
+        <div id="instagram-contents">
+            <div data-is data-is-api="http://www.stylistkelseysue.com/instashow/api/"
+                data-is-source="#patio42, #patioD, #파티오42, #파티오디, #파티오D"
+                data-is-speed="1000"
+                data-is-auto="5000">
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="About">
     <div class="container">
+    <h2>ABOUT</h2>
 	<div class="picture picture-1"><img src="/static/img/About-interior.jpg" /></div>
         <div class="content content-1">
             <div class="thumbnail"><img src="/static/img/About-interior-thumbnail.png" /></div>
