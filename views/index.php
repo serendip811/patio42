@@ -19,7 +19,7 @@ Template::setLayout('layout/master', [
 
 <section id="Instagram">
     <div class="container">
-        <h2># PATIO</h2>
+        <h2># INSTAGRAM</h2>
         <div id="instagram-contents">
             <div data-is data-is-api="http://www.stylistkelseysue.com/instashow/api/"
                 data-is-source="#patio42, #patioD, #파티오42, #파티오디, #파티오D"

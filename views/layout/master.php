@@ -34,7 +34,7 @@ This web page has been developed by J.
 <nav>
     <ul>
         <li class="tab tab-instagram">
-            <a href="/#Instagram">#PATIO</a>
+            <a href="/#Instagram">#INSTAGRAM</a>
         </li>
         <li class="tab tab-about">
             <a href="/#About">ABOUT</a>
