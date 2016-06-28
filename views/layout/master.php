@@ -67,9 +67,11 @@ This web page has been developed by J.
     <span></span>
 </div>
 
+<?php $i = 0; ?>
 <?php foreach ($popupPosts as $key => $popupPost) :?>
 
-<section class="Popup active" name="popup_<?php echo $popupPost['id']; ?>">
+
+<section class="Popup active" name="popup_<?php echo $popupPost['id']; ?>" style="margin-left:<?php echo $i*420; ?>px;">
     <a class="close">x</a>
     <div class="container-popup">
         <div class="thumbnail">
@@ -85,6 +87,7 @@ This web page has been developed by J.
         </div>
     </div>
 </section>
+<?php $i++; ?>
 <?php endforeach ?>
 
 
