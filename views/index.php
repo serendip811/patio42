@@ -105,11 +105,11 @@ Template::setLayout('layout/master', [
     <div class="row">
         <div class="links-col links-col-1">
             <div class="logo"><img src="/static/img/MenuLinks-logo-1.png"></div>
-            <a class="view view-1" href="/files/patio42.pdf?20160628" target="_blank">VIEW MENU</a>
+            <a class="view view-1" href="/static/pdf/patio42.pdf" target="_blank">VIEW MENU</a>
         </div>
         <div class="links-col links-col-2">
-            <div class="logo"><img src="/static/img/MenuLinks-logo-2.png"></div>
-            <a class="view view-2" href="/files/thepan.pdf" target="_blank">VIEW MENU</a>
+            <div class="logo"></div>
+            <a class="view view-2" href="/static/pdf/patiod.pdf" target="_blank">VIEW MENU</a>
         </div>
         <!--div class="links-col links-col-3">
             <div class="logo"><img src="/static/img/MenuLinks-logo-3.png"></div>
