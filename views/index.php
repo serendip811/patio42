@@ -71,7 +71,7 @@ Template::setLayout('layout/master', [
         <div id="StoreCategories" class="">
             <div class="category active"><a data-filter="*">ALL</a></div>
             <div class="category"><a data-filter=".origin">PATIO42</a></div>
-            <div class="category"><a data-filter=".thepan">PATIO42 THE PAN</a></div>
+            <!--div class="category"><a data-filter=".thepan">PATIO42 THE PAN</a></div-->
             <div class="category category-last"><a data-filter=".patiod">PATIO D</a></div>
         </div>
         <div id="StoreItems">
