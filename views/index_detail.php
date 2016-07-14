@@ -1,9 +1,9 @@
 <?php
 use Wandu\Template\Syntax\Template;
 
-Template::setLayout('layout/master', [
+Template::setLayout('layout/new_master', [
     'cssFiles' => [
-        '/static/css/index.css?20160713'
+        '/static/css/index_new.css?20160713',
     ],
     'jsFiles' => [
         '/static/js/jquery.instashow.packaged.js',
@@ -17,14 +17,11 @@ Template::setLayout('layout/master', [
 ]);
 ?>
 
-<section id="Instagram">
+<section id="Header">
     <div class="container">
-        <h2># INSTAGRAM</h2>
-        <div id="instagram-contents">
-            <div data-is data-is-api="http://www.stylistkelseysue.com/instashow/api/"
-                data-is-source="#patio42, #patioD, #파티오42, #파티오디, #파티오D"
-                data-is-speed="1000"
-                data-is-auto="5000">
+        <div class="header">
+            <div class="header-col header-col-0 active" style="background-image :url(/static/img/background-index.jpg)"></div>
+            <div class="header-col header-col-1" style="background-image :url(/static/img/about-patio-1.jpg)">
             </div>
         </div>
     </div>

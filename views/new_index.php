@@ -21,10 +21,61 @@ Template::setLayout('layout/new_master', [
     <div class="container">
         <div class="header">
             <div class="header-col header-col-0 active" style="background-image :url(/static/img/background-index.jpg)"></div>
-            <div class="header-col header-col-1" style="background-image :url(/static/img/about-patio-1.jpg)">
+            <div class="header-col header-col-1" style="background-image :url(/static/img/about-patio-1.jpg)"></div>
+        </div>
+    </div>
+</section>
+
+<section id="Banner">
+    <div class="container">
+        <div class="Event banner_area">
+            <div class="slide">
+                <img src="http://www.raracost.com/img/main/s_b1_1.jpg" class="event-col event-col-0 active"></img>
+                <img src="http://fakeimg.pl/325x372/09F/fff/?text=Event" class="event-col event-col-1"></img>
+                <img src="http://fakeimg.pl/325x372/9F0/fff/?text=325x372" class="event-col event-col-2"></img>
+            </div>
+        </div>
+        <div class="Menu banner_area">
+            <div class="controller">
+                <a class="button button-menu-prev">prev image</a>
+                <a class="button button-menu-next">next image</a>
+            </div>
+            <div class="slide">
+                <img src="http://www.raracost.com/img/main/s_b2_img3.png" class="menu-col menu-col-0 active"></img>
+                <img src="http://fakeimg.pl/251x214/F90/fff/?text=menu" class="menu-col menu-col-1"></img>
+                <img src="http://fakeimg.pl/251x214/9F0/fff/?text=251x214" class="menu-col menu-col-2"></img>
+            </div>
+        </div>
+        <div class="Store banner_area">
+            <div class="new_store">
+                <div class="slide">
+                    <div class="store-col store-col-0 active">
+                        <img src="http://patio42.co.kr/files/post_YpUTGF.jpg"/>
+                        <div class="store_title">강남구청점</div>
+                        <div class="address">서울특별시 강남구 학동로56길 26<br>02-6200-6642</div>
+                    </div>
+                    <div class="store-col store-col-1">
+                        <img src="http://fakeimg.pl/325x185/F90/fff/?text=new store"/>
+                        <div class="store_title">신사점</div>
+                        <div class="address">서울특별시 강남구 논현동 16-44<br>02-516-1142</div>
+                    </div>
+                    <div class="store-col store-col-2">
+                        <img src="http://fakeimg.pl/325x185/0F9/fff/?text=325x185"/>
+                        <div class="store_title">부산점</div>
+                        <div class="address">부산광역시 무슨구 무슨동 1234<br>051-1234-5678</div>
+                    </div>
+                </div>
+                <div class="controller">
+                    <a class="button button-store-prev">prev image</a>
+                    <a class="button button-store-next">next image</a>
+                </div>
+            </div>
+            <div class="franchise">
+                <img src="http://www.raracost.com/img/main/s_b3_t_bg.gif" height="179" width="325">
             </div>
         </div>
     </div>
+    
 </section>
 
 <section id="Instagram">
@@ -36,153 +87,6 @@ Template::setLayout('layout/new_master', [
                 data-is-speed="1000"
                 data-is-auto="5000">
             </div>
-        </div>
-    </div>
-</section>
-
-<section id="About">
-    <div class="container">
-    	<div class="picture picture-1"><img src="/static/img/About-interior.jpg" /></div>
-        <div class="content content-1">
-            <div class="thumbnail"><img src="/static/img/About-interior-thumbnail.png" /></div>
-            <div class="text">점심에는 레스토랑으로, 저녁에는 캐주얼바로<br />
-                운영되며 그 외 시간대에는 누구나 편히 쉴 수 있는<br />
-                카페로 즐길 수 있는 복합공간의 파티오42
-            </div>
-        </div>
-        <div class="picture picture-2"><img src="/static/img/About-food.png" /></div>
-        <div class="content content-2">
-            <div class="thumbnail"><img src="/static/img/About-food-thumbnail.png" /></div>
-            <div class="text">독창적인 재료의 다양한 소스와 레시피로<br />
-                흔히 접할 수 없는 이탈리안 가정식 요리들을 선보이는<br />
-                우리들만의 아지트 파티오42
-            </div>
-        </div>
-        <div class="picture picture-3"><img src="/static/img/About-name.png" /></div>
-        <div class="content content-3">
-            <div class="text">"파티오42"는 앞마당을 뜻하는 '파티오'와<br />
-                영화 '은하수를 여행하는 히치하이커를 위한 안내서'의<br />
-                숫자 '42'에서 이름을 따왔습니다.
-            </div>
-        </div>
-        <div class="banner">
-            <div class="thumbnail"><img src="/static/img/About-banner.png" /></div>
-            <div class="text">인생과 우주, 그리고 모든 것에 대한 답을 뜻한다는 숫자 '42'. 우리는 이 숫자처럼 '파티오42'라는 공간이 맛있는 음식과 함게 어떠한 답을 찾아 특별한 순간을 만끽할 수 있는 아지트가 되기를 희망합니다.
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="Store">
-    <div class="container">
-        <h2>STORE</h2>
-        <div id="StoreCategoriesMobile">All</div>
-        <div id="StoreCategories" class="">
-            <div class="category active"><a data-filter="*">ALL</a></div>
-            <div class="category"><a data-filter=".origin">PATIO42</a></div>
-            <div class="category"><a data-filter=".thepan">PATIO42 THE PAN</a></div>
-            <div class="category category-last"><a data-filter=".patiod">PATIO D</a></div>
-        </div>
-        <div id="StoreItems">
-<?php foreach ($storePosts as $idx => $post) : ?>
-            <div class="item <?php echo isset($post['extra']['store']['filter']) ? $post['extra']['store']['filter'] : ''; ?>">
-<?php if (isset($post['thumbnail']) && isset($post['thumbnail']['name']) && isset($post['thumbnail']['path'])) : ?>
-                <div class="thumbnail"><img alt="<?php echo $post['thumbnail']['name']; ?>" src="files<?php echo $post['thumbnail']['path']; ?>" /></div>
-<?php endif; ?>
-                <div class="contents">
-                    <div class="category"><?php echo ($post['extra']['store']['filter'] === 'origin') ?
-                            'PATIO42': (($post['extra']['store']['filter'] === 'thepan') ? 'PATIO42 THE PAN' : 'PATIO D'); ?></div>
-                    <div class="title"><?php echo isset($post['title']) ? $post['title'] : ''; ?></div>
-                    <div class="address"><?php echo isset($post['extra']['store']['address']) ?
-                            $post['extra']['store']['address'] : ''; ?><br /><?php echo isset($post['extra']['store']['phone']) ?
-                            $post['extra']['store']['phone'] : ''; ?>
-                    </div>
-                </div>
-                <div class="footer">
-                    <a class="detail" data-store-id="<?php echo $post['id']; ?>">매장정보 상세보기</a>
-                    <a class="facebook" href="<?php echo isset($post['extra']['store']['facebook']) ?
-                        $post['extra']['store']['facebook'] : ''; ?>" target="_blank">Facebook</a>
-                </div>
-            </div>
-<?php endforeach; ?>
-        </div>
-    </div>
-</section>
-
-<section id="MenuLinks">
-    <h2>MENU</h2>
-    <div class="row">
-        <div class="links-col links-col-1">
-            <div class="logo"><img src="/static/img/MenuLinks-logo-1.png"></div>
-            <a class="view view-1" href="/files/patio42.pdf" target="_blank">VIEW MENU</a>
-        </div>
-        <div class="links-col links-col-2">
-            <div class="logo"><img src="/static/img/MenuLinks-logo-2.png"></div>
-            <a class="view view-2" href="/files/thepan.pdf" target="_blank">VIEW MENU</a>
-        </div>
-        <!--div class="links-col links-col-3">
-            <div class="logo"><img src="/static/img/MenuLinks-logo-3.png"></div>
-            <a class="view view-3" target="_blank">준비중입니다</a>
-        </div-->
-    </div>
-</section>
-
-<section id="Menu">
-    <div class="container">
-        <div class="content">
-            <div class="text text-main">"재료의 신선도는<br />음식의 생명입니다."</div>
-            <div class="text text-sub">파티오42의 바질, 루꼴라, 이태리 파슬리 등 일부 특수 채소는 대전에 위치한 파티오 42 직영농장에서 무농약으로 재배되며 그 외 모든 식재료들은 테이블 위의 건강함을 유지하기 위해 매일 새벽 각 매장으로 직배송됩니다.
-            </div>
-        </div>
-        <div class="picture"></div>
-    </div>
-</section>
-
-<section id="News">
-    <div class="container">
-        <h2>NEWS & EVENT</h2>
-        <div id="NewsItems">
-<?php foreach ($newsPosts as $post) : ?>
-            <div class="item item-1">
-                <div class="thumbnail">
-                    <a href="<?php echo isset($post['extra']['link']) ? $post['extra']['link'] : ''?>" target="_blank">
-<?php if (isset($post['thumbnail']) && isset($post['thumbnail']['path'])) :?>
-                        <img src="/files<?php echo $post['thumbnail']['path']?>" />
-<?php endif ?>
-                    </a>
-                </div>
-                <div class="content">
-                    <div class="title"><?php echo isset($post['title']) ? $post['title'] : ''?></div>
-                </div>
-            </div>
-<?php endforeach ?>
-        </div>
-    </div>
-</section>
-
-<section id="Press">
-    <h2>PRESS</h2>
-    <div class="container">
-        <div class="controller">
-            <a class="button button-press-prev">prev image</a>
-            <a class="button button-press-next">next image</a>
-        </div>
-        <div class="press">
-<?php foreach ($pressPosts as $index => $post) : ?>
-            <div class="press-col press-col-<?php echo $index?> <?php echo $index === 0 ? 'active' : '' ?>">
-                <div class="thumbnail">
-<?php if (isset($post['thumbnail']) & isset($post['thumbnail']['path'])) :?>
-                   <img src="/files<?php echo $post['thumbnail']['path']; ?>" />
-<?php endif; ?>
-                </div>
-                <div class="content">
-                    <div class="title"><?php echo isset($post['title']) ? $post['title'] : ''; ?></div>
-                    <div class="text"><?php echo isset($post['contents']) ? nl2br($post['contents']) : ''; ?></div>
-                    <div class="link"><?php echo isset($post['extra']['url']) ? $post['extra']['url'] : ''?></div>
-                </div>
-                <a class="button-read" href="<?php echo isset($post['extra']['link']) ? $post['extra']['link'] : '#'?>" target="_blank">READ</a>
-            </div>
-<?php endforeach ?>
         </div>
     </div>
 </section>

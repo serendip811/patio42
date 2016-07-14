@@ -6,8 +6,10 @@ use Wandu\Router\Router;
 return function (Router $router) {
     $router->get('', 'index@Patio');
     $router->get('/new', 'new_index@Patio');
+    $router->get('/detail', 'index_detail@Patio');
     $router->get('/2', 'index2@Patio');
     $router->get('/franchise', 'franchise@Patio');
+    $router->get('/franchise_new', 'franchise_new@Patio');
     $router->get('/store_popup/{id}', 'store_popup@Patio');
     $router->group(['prefix' => '/admin', 'middleware' => ['auth@Admin']], function (Router $router) {
         $router->group('/ajax', function (Router $router) {

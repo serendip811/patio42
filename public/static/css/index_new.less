@@ -23,8 +23,222 @@ body.disabled {
 	overflow: hidden;
 }
 
+#Banner {
+    margin-top: 50px;
+    position: relative;
+    .screen-md({
+        width: 1000px;
+    });
+    margin: 0 auto;
+    padding: 0;
+    clear: both;
+    div.container {
+        .screen-sm({
+            height: 1137px;
+        });
+        .screen-md({
+            margin: 50px 0;
+        });
+        height: 372px;
+        position: relative;
+        text-align: center;
+        div.banner_area {
+            float: left;
+            width: 325px;
+            height: 375px;
+            position: relative;
+            display: block;
+            margin: 0 10px;
+            .screen-sm({
+                float: none;
+                margin-left: auto;
+                margin-right: auto;  
+                margin-top: 20px;  
+            });
+            .screen-md({
+                display: inline-block;
+            });
+        }
+        div.Event div.slide {
+            div.event-col {
+                display: none;
+                &.active {
+                    display: inline-block;
+                }
+            }
+        }
+        div.Menu{
+            background: url(http://www.raracost.com/img/main/s_b2_bg.gif) no-repeat;
+            div.slide {
+                position:relative;
+                margin: 79px 36px;
+                div.menu-col {
+                    display: none;
+                    &.active {
+                        display: inline-block;
+                    }
+                }
+            }        
+            div.controller {
+                a {
+                    &:before {
+                        position: absolute;
+                        display: block;
+                        width: 25px;
+                        height: 50px;
+                        padding-top: 178px;
+                        text-indent: 0;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                    &.button-menu-next {
+                        &:before {
+                            right: 0;
+                            padding-right: 0px;
+                            content: url(../img/nav-next-out.png);
+                        }
+                        &:hover {
+                            &:before {
+                                content: url(../img/nav-next-hover.png);
+                            }
+                        }
+                    }
+                    &.button-menu-prev {
+                        &:before {
+                            left: 0;
+                            padding-left: 0px;
+                            content: url(../img/nav-prev-out.png);
+                        }
+                        &:hover {
+                            &:before {
+                                content: url(../img/nav-prev-hover.png);
+                            }
+                        }
+                    }
+                }
+            }
+            div.simpleslider-controller {
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 25px;
+                margin-top: 232px;
+                text-align: center;
+                a {
+                    .transition(background-color 0.3s ease-in-out);
+                    display: inline-block;
+                    width: 12px;
+                    height: 12px;
+                    margin: 5px 8px;
+                    border: 2px solid #fff;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    &.active {
+                        background: #fff;
+                    }
+                }
+            }
+        }
+        div.Store div.new_store {
+            height: 185px;
+            padding-bottom: 10px;
+        }
+        div.Store {
+            div.slide{
+                .store_title {
+                    position: absolute;
+                    font-family: 'Open Sans Bold',sans-serif;
+                    font-weight: 700;
+                    font-size: 27px;
+                    bottom: 78px;
+                    right: 35px;
+                }
+                .address {
+                    position: absolute;
+                    font-size: 16px;
+                    bottom: 27px;
+                    right: 35px;
+                    text-align : right;
+                }
+                img {
+                    width: 325px;
+                    height: 187px;
+                    opacity: 0.7;
+                    filter: alpha(opacity=70); /* For IE8 and earlier */
+                }
+                div.store-col {
+                    display: none;
+                    &.active {
+                        display: inline-block;
+                    }
+                }
+            }
+            div.controller {
+                a {
+                    &:before {
+                        position: absolute;
+                        display: block;
+                        width: 25px;
+                        height: 50px;
+                        padding-top: 73px;
+                        text-indent: 0;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                    &.button-store-next {
+                        &:before {
+                            right: 0;
+                            padding-right: 0px;
+                            content: url(../img/nav-next-out.png);
+                        }
+                        &:hover {
+                            &:before {
+                                content: url(../img/nav-next-hover.png);
+                            }
+                        }
+                    }
+                    &.button-store-prev {
+                        &:before {
+                            left: 0;
+                            padding-left: 0px;
+                            content: url(../img/nav-prev-out.png);
+                        }
+                        &:hover {
+                            &:before {
+                                content: url(../img/nav-prev-hover.png);
+                            }
+                        }
+                    }
+                }
+            }
+            div.simpleslider-controller {
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 25px;
+                margin-top: 157px;
+                text-align: center;
+                a {
+                    .transition(background-color 0.3s ease-in-out);
+                    display: inline-block;
+                    width: 12px;
+                    height: 12px;
+                    margin: 5px 8px;
+                    border: 2px solid #fff;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    &.active {
+                        background: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
 #Instagram {
     margin-top: 50px;
+    margin-bottom: 20px;
     div.container {
         text-align: center;
         div.picture, div.content {

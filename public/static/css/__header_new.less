@@ -69,7 +69,22 @@ div.nav-toggle {
         display: none;
     });
 }
-
+.sns {
+    .screen-sm({
+        display: none;
+    });
+    position: absolute;
+    width: 200px;
+    li {
+        float: left;
+        border: 1px solid #5d5d5d;
+        margin: 0 5px 0 0;
+        a {
+            font-size: 0;
+            padding : 0;
+        }
+    }
+}
 nav {
     color: #fff;
     .font-osans-semibold();
@@ -97,20 +112,7 @@ nav {
             .translate3d(0, 0, 0);
         });
     }
-    &.over-height {
-        .screen-md({
-            .opacity(100);
-            position: fixed;
-            top: 0;
-            left: 0;
-            > ul {
-                margin: 10px 0;
-                > li {
-                    margin: 0 5.1%;
-                }
-            }
-        });
-    }
+
     > ul {
         text-align: center;
         .less-than(@screen-md-1, {
@@ -158,7 +160,6 @@ nav {
             }
         }
     }
-
     .screen-md({
         .transition(opacity 1s ease-in-out);
         .opacity(70);
@@ -173,23 +174,7 @@ nav {
                 }
             }
         }
-        &.over-height, &.invisible {
-            position: fixed;
-            top: 0;
-            left: 0;
-            > ul {
-                margin: 10px 0;
-                > li {
-                    margin: 0 4%;
-                }
-                .tab-logo {
-                    display: none;
-                }
-            }
-        }
-        &.over-height {
-            .opacity(70);
-        }
+
     });    
 }
 

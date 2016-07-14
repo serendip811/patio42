@@ -40,27 +40,31 @@ This web page has been developed by J.
 </div>
 
 <nav>
+    <ul class="sns">
+        <li class="face"><a href="javascript:alert('준비중입니다');" onfocus="this.blur()"><img src="http://raracost.com/img/main/sns_01.png" alt="페이스북"></a></li>
+        <li class="instagram"><a href="javascript:alert('준비중입니다');" onfocus="this.blur()"><img src="http://raracost.com/img/main/sns_04.png" alt="인스타그램"></a></li>
+    </ul>
     <ul>
         <li class="tab tab-about">
-            <a href="/#About">ABOUT</a>
+            <a href="/new">HOME</a>
         </li>
-        <li class="tab tab-event">
-            <a href="/#Event">EVENT</a>
+        <li class="tab tab-about">
+            <a href="/detail#About">ABOUT</a>
         </li>
         <li class="tab tab-store">
-            <a href="/#Store">STORE</a>
+            <a href="/detail#Store">STORE</a>
         </li>
         <li class="tab tab-logo">
-            <a href="/"><img src="/static/img/logo.png"/></a>
+            <a href="/new"><img src="/static/img/logo.png"/></a>
         </li>
         <li class="tab tab-menu">
-            <a href="/#MenuLinks">MENU</a>
+            <a href="/detail#MenuLinks">MENU</a>
         </li>
         <li class="tab tab-news">
-            <a href="/#News">NEWS</a>
+            <a href="/detail#News">NEWS</a>
         </li>
         <li class="tab tab-franchise">
-            <a href="/franchise">FRANCHISE</a>
+            <a href="/franchise_new">FRANCHISE</a>
         </li>
     </ul>
 </nav>

@@ -17,6 +17,21 @@
             nextButton: $('a.button-header-next'),
             prevButton: $('a.button-header-prev')
         });
+        $('#Banner div.Event div.slide').simpleslider({
+            controller: true
+        });
+
+        $('#Banner div.Menu div.slide').simpleslider({
+            controller: true,
+            nextButton: $('a.button-menu-next'),
+            prevButton: $('a.button-menu-prev')
+        });
+
+        $('#Banner div.Store div.slide').simpleslider({
+            controller: true,
+            nextButton: $('a.button-store-next'),
+            prevButton: $('a.button-store-prev')
+        });
 
         $('#StoreItems a.detail').bind('click', function() {
             var id = $(this).data('store-id');

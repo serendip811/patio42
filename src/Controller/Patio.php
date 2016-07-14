@@ -38,6 +38,20 @@ class Patio extends BaseController
     /**
      * @return ResponseInterface
      */
+    public function index_detail()
+    {
+
+        $newsPosts = array_reverse($this->repository->where(['category_id' => 1])->all()->toArray());
+        $pressPosts = $this->repository->where(['category_id' => 2])->all();
+        $storePosts = $this->repository->where(['category_id' => 3])->all();
+        $popupPosts = $this->repository->where(['category_id' => 4])->all();
+        return Response::plain($this->view->render('index_detail',
+            compact('newsPosts', 'pressPosts', 'storePosts', 'popupPosts')));
+    }
+
+    /**
+     * @return ResponseInterface
+     */
     public function index2()
     {
 
@@ -56,6 +70,16 @@ class Patio extends BaseController
     {
         $popupPosts = $this->repository->where(['category_id' => 4])->all();
         return Response::plain($this->view->render('franchise',
+            compact('popupPosts')));
+    }
+
+    /**
+     * @return ResponseInterface
+     */
+    public function franchise_new()
+    {
+        $popupPosts = $this->repository->where(['category_id' => 4])->all();
+        return Response::plain($this->view->render('new_franchise',
             compact('popupPosts')));
     }
 
