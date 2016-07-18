@@ -185,8 +185,8 @@ Template::setLayout('layout/master', [
             <div class="tr">
                 <div class="td td-title">인테리어비</div>
                 <div class="td td-detail">실내 인테리어, 목공사, 타일, 주방, 전기, 조명, 가구 등</div>
-                <div class="td td-standard">5,700</div>
-                <div class="td td-etc">평당 100</div>
+                <div class="td td-standard">6,000</div>
+                <div class="td td-etc">평당 200</div>
             </div>
             <div class="tr">
                 <div class="td td-title">가구류</div>
@@ -227,7 +227,7 @@ Template::setLayout('layout/master', [
             <div class="tr tr-result">
                 <div class="td td-title">합계</div>
                 <div class="td td-detail"></div>
-                <div class="td td-standard">12,800</div>
+                <div class="td td-standard">13,100</div>
                 <div class="td td-etc"></div>
             </div>
         </div>
