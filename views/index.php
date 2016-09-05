@@ -49,7 +49,7 @@ Template::setLayout('layout/master', [
                 우리들만의 아지트 파티오42
             </div>
         </div>
-        <div class="picture picture-3"><img src="/static/img/About-name.png" /></div>
+        <div class="picture picture-3"><img src="/static/img/About-name2.jpeg" /></div>
         <div class="content content-3">
             <div class="text">"파티오42"는 앞마당을 뜻하는 '파티오'와<br />
                 영화 '은하수를 여행하는 히치하이커를 위한 안내서'의<br />
