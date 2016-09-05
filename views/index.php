@@ -3,7 +3,7 @@ use Wandu\Template\Syntax\Template;
 
 Template::setLayout('layout/master', [
     'cssFiles' => [
-        '/static/css/index.css?20160713'
+        '/static/css/index.css?20160905'
     ],
     'jsFiles' => [
         '/static/js/jquery.instashow.packaged.js',
