@@ -20,8 +20,8 @@ Template::setLayout('layout/new_master', [
 <section id="Header">
     <div class="container">
         <div class="header">
-            <div class="header-col header-col-0 active" style="background-image :url(/static/img/background-index.jpg)"></div>
-            <div class="header-col header-col-1" style="background-image :url(/static/img/about-patio-1.jpg)">
+            <div class="header-col header-col-0 active" style="background-image :url(/static/img/bg1.jpeg)"></div>
+            <div class="header-col header-col-1" style="background-image :url(/static/img/bg2.jpeg)">
             </div>
         </div>
     </div>
