@@ -17,8 +17,9 @@ class Patio extends BaseController
         $pressPosts = $this->repository->where(['category_id' => 2])->all();
         $storePosts = $this->repository->where(['category_id' => 3])->all();
         $popupPosts = $this->repository->where(['category_id' => 4])->all();
+        $menuPosts = $this->repository->where(['category_id' => 5])->all();
         return Response::plain($this->view->render('index',
-            compact('newsPosts', 'pressPosts', 'storePosts', 'popupPosts')));
+            compact('newsPosts', 'pressPosts', 'storePosts', 'popupPosts', 'menuPosts')));
     }
 
     /**
@@ -31,8 +32,9 @@ class Patio extends BaseController
         $pressPosts = $this->repository->where(['category_id' => 2])->all();
         $storePosts = $this->repository->where(['category_id' => 3])->all();
         $popupPosts = $this->repository->where(['category_id' => 4])->all();
+        $menuPosts = $this->repository->where(['category_id' => 5])->all();
         return Response::plain($this->view->render('new_index',
-            compact('newsPosts', 'pressPosts', 'storePosts', 'popupPosts')));
+            compact('newsPosts', 'pressPosts', 'storePosts', 'popupPosts', 'menuPosts')));
     }
 
     /**
@@ -45,8 +47,9 @@ class Patio extends BaseController
         $pressPosts = $this->repository->where(['category_id' => 2])->all();
         $storePosts = $this->repository->where(['category_id' => 3])->all();
         $popupPosts = $this->repository->where(['category_id' => 4])->all();
+        $menuPosts = $this->repository->where(['category_id' => 5])->all();
         return Response::plain($this->view->render('index_detail',
-            compact('newsPosts', 'pressPosts', 'storePosts', 'popupPosts')));
+            compact('newsPosts', 'pressPosts', 'storePosts', 'popupPosts', 'menuPosts')));
     }
 
     /**
