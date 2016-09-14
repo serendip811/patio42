@@ -112,7 +112,7 @@ Template::setLayout('layout');
                     </div>
 <?php endfor; ?>
 
-                <div class="pure-control-group pure-control-group-choice" data-category="[1,2,3,4]">
+                <div class="pure-control-group pure-control-group-choice" data-category="[1,2,3,4,5]">
                     <label for="formThumbnail">Thumbnail</label>
                     <input id="formThumbnail" type="file" name="thumbnail" />
                 </div>

@@ -118,7 +118,7 @@ Template::setLayout('layout');
 <?php endif; ?>
 <?php endfor; ?>
 
-                <div class="pure-control-group pure-control-group-choice" data-category="[1,2,3,4]">
+                <div class="pure-control-group pure-control-group-choice" data-category="[1,2,3,4,5]">
                     <label for="formThumbnail">Thumbnail</label>
                     <input id="formThumbnail" type="file" name="thumbnail" />
                     <label><input type="checkbox" name="thumbnailDelete" value="1" />삭제</label>
@@ -126,7 +126,11 @@ Template::setLayout('layout');
 
 <?php if (isset($post['thumbnail']) && isset($post['thumbnail']['path']) && isset($post['thumbnail']['name'])) : ?>
                 <div class="thumbnail">
+                <?php if(strpos($post['thumbnail']['name'], '.pdf') > 0) : ?>
+                    <a href="/files<?php echo $post['thumbnail']['path']?>" target="_new"><?php echo $post['thumbnail']['name']?></a>
+                <?php else : ?>
                     <img src="/files<?php echo $post['thumbnail']['path']?>" alt="<?php echo $post['thumbnail']['name']?>" />
+                <?php endif; ?>
                 </div>
 <?php endif; ?>
             </fieldset>
