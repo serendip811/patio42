@@ -300,7 +300,10 @@ Template::setLayout('layout/new_master', [
 
 <section id="mail">
     <div class="container">
-        <div class="mail-content">가맹점 개설에 대한 상담을 원하시는 분들은<br/>이메일을 통해 연락 부탁드립니다.</div>
+        <div class="mail-content">가맹점 개설에 대한 상담을 원하시는 분들은 이메일<br/>또는 창업 담당 부서로 연락 부탁 드립니다.</div>
+        <div class="mail-content">
+            Tel : 070-7783-9942
+        </div>
         <a href="mailto:patio42ap@naver.com">
             <img src="/static/img/mail-big.png">
         </a>
