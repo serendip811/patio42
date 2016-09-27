@@ -27,7 +27,7 @@ body.disabled {
     margin-top: 50px;
     position: relative;
     .screen-md({
-        width: 1000px;
+        width: 1400px;
     });
     margin: 0 auto;
     padding: 0;
@@ -143,6 +143,33 @@ body.disabled {
             height: 185px;
             padding-bottom: 10px;
         }
+        div.Store div.sns_list {
+            width:325px;
+            height: 176px;
+            border: 1px solid #CCC;
+            h2 {
+                .orange {
+                    color: #f86c06 !important;
+                }
+                color: #4c4c4c;
+                font-size: 21px;
+                float: left;
+                padding: 20px;
+            }
+            p {
+                font-size: 13px;
+                clear: both;
+            }
+            ul {
+                border: 0;
+                margin: 5px 35px;
+                li {
+                    float: left;
+                    padding: 0 20px 0 0;
+                    list-style: none;
+                }
+            }
+        }
         div.Store {
             div.slide{
                 .store_title {
@@ -230,6 +257,50 @@ body.disabled {
                     &.active {
                         background: #fff;
                     }
+                }
+            }
+        }
+        div.Franchise {
+            height: 370px;
+            border: 1px solid #CCC;
+            h2 {
+                .orange {
+                    color: #f86c06 !important;
+                }
+                color: #4c4c4c;
+                font-size: 24px;
+                float: left;
+                padding: 20px;
+            }
+            form {
+                clear : both;
+                font-size : 20px;
+                padding : 10px;
+                td {
+                    padding-bottom : 10px;
+                }
+                td.label {
+                    width:64px;
+                    text-align:right;
+                }
+                td.value {
+                    width : 80%;
+                    text-align:left;
+                    padding-left : 30px;
+                }
+                .input1 {
+                    width:167px;
+                }
+                .input2 {
+                    width:47px;
+                }
+                textarea {
+                    width: 240px;
+                    margin-left: -16px;
+                }
+                #btn_submit {
+                    width: 248px;
+                    margin-left: -15px;
                 }
             }
         }
@@ -690,10 +761,10 @@ body.disabled {
     });
     .greater-than(1320px, {
         .container {
-            width: 1320px;
+            width: 1387px;
         }
         &Items {
-            width: 1320px;
+            width: 1387px;
         }
     });
     .between-and(975px, 1319px, {

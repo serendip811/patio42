@@ -41,7 +41,7 @@ This web page has been developed by J.
 
 <nav>
     <ul class="sns">
-        <li class="face"><a href="https://www.facebook.com/patio42" onfocus="this.blur()"><img src="http://raracost.com/img/main/sns_01.png" alt="페이스북"></a></li>
+        <li class="face"><a href="https://www.facebook.com/patio42" target="_blank" onfocus="this.blur()"><img src="http://raracost.com/img/main/sns_01.png" alt="페이스북"></a></li>
         <li class="instagram"><a href="javascript:alert('준비중입니다');" onfocus="this.blur()"><img src="http://raracost.com/img/main/sns_04.png" alt="인스타그램"></a></li>
     </ul>
     <ul>

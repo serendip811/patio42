@@ -57,9 +57,37 @@ Template::setLayout('layout/new_master', [
                     <a class="button button-store-next">next image</a>
                 </div>
             </div>
-            <div class="franchise">
-                <img src="http://www.raracost.com/img/main/s_b3_t_bg.gif" height="179" width="325">
+            <div class="sns_list">
+                <h2>파티오 <span class="orange">SNS</span></h2>
+                <p class="clear">파티오의 즐거운 이벤트와 새로운 소식을<br>파티오SNS에서 가장 빨리 만나보세요!</p>
+                <ul>
+                    <li><a href="https://www.facebook.com/patio42" target="_blank"><img src="/static/img/f_sns1.gif" alt="페이스북"></a></li>
+                    <li><a href="javascript:alert('준비중입니다');" onfocus="this.blur()"><img src="/static/img/f_sns2.gif" alt="트위터"></a></li>
+                    <li><a href="javascript:alert('준비중입니다');" onfocus="this.blur()"><img src="/static/img/f_sns3.gif" alt="카카오스토리"></a></li>
+                    <li><a href="javascript:alert('준비중입니다');" onfocus="this.blur()"><img src="/static/img/f_sns4.gif" alt="인스타그램"></a></li>
+                </ul>
             </div>
+        </div>
+        <div class="Franchise banner_area">
+            <h2>빠른창업상담</h2>
+            <form>
+                <table>
+                    <tr>
+                        <td class="label">이름</td>
+                        <td class="value"><input type="text" class="input1"/></td>
+                    </tr>
+                    <tr>
+                        <td class="label">연락처</td>
+                        <td class="value"><input type="text" class="input2"/>-<input type="text" class="input2"/>-<input type="text" class="input2"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea rows="5" placeholder="상담내용을 입력하세요.(창업 희망지역 등)"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="image" id="btn_submit" src="/static/img/btn_write1.png" border="0" accesskey="s"></td>
+                    </tr>
+                </table>
+            </form>
         </div>
     </div>
     
