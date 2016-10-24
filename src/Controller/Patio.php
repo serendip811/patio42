@@ -16,7 +16,7 @@ class Patio extends BaseController
         $newsPosts = array_reverse($this->repository->where(['category_id' => 1])->all()->toArray());
         $pressPosts = $this->repository->where(['category_id' => 2])->all();
         $storePosts = $this->repository->where(['category_id' => 3])->all();
-        $popupPosts = $this->repository->where(['category_id' => 4])->all();
+        $popupPosts = array_reverse($this->repository->where(['category_id' => 4])->all()->toArray());
         $menuPosts = $this->repository->where(['category_id' => 5])->all();
         return Response::plain($this->view->render('index',
             compact('newsPosts', 'pressPosts', 'storePosts', 'popupPosts', 'menuPosts')));
@@ -31,7 +31,7 @@ class Patio extends BaseController
         $newsPosts = array_reverse($this->repository->where(['category_id' => 1])->all()->toArray());
         $pressPosts = $this->repository->where(['category_id' => 2])->all();
         $storePosts = $this->repository->where(['category_id' => 3])->all();
-        $popupPosts = $this->repository->where(['category_id' => 4])->all();
+        $popupPosts = array_reverse($this->repository->where(['category_id' => 4])->all()->toArray());
         $menuPosts = $this->repository->where(['category_id' => 5])->all();
         return Response::plain($this->view->render('new_index',
             compact('newsPosts', 'pressPosts', 'storePosts', 'popupPosts', 'menuPosts')));
@@ -46,7 +46,7 @@ class Patio extends BaseController
         $newsPosts = array_reverse($this->repository->where(['category_id' => 1])->all()->toArray());
         $pressPosts = $this->repository->where(['category_id' => 2])->all();
         $storePosts = $this->repository->where(['category_id' => 3])->all();
-        $popupPosts = $this->repository->where(['category_id' => 4])->all();
+        $popupPosts = array_reverse($this->repository->where(['category_id' => 4])->all()->toArray());
         $menuPosts = $this->repository->where(['category_id' => 5])->all();
         return Response::plain($this->view->render('index_detail',
             compact('newsPosts', 'pressPosts', 'storePosts', 'popupPosts', 'menuPosts')));
@@ -61,7 +61,7 @@ class Patio extends BaseController
         $newsPosts = array_reverse($this->repository->where(['category_id' => 1])->all()->toArray());
         $pressPosts = $this->repository->where(['category_id' => 2])->all();
         $storePosts = $this->repository->where(['category_id' => 3])->all();
-        $popupPosts = $this->repository->where(['category_id' => 4])->all();
+        $popupPosts = array_reverse($this->repository->where(['category_id' => 4])->all()->toArray());
         return Response::plain($this->view->render('index2',
             compact('newsPosts', 'pressPosts', 'storePosts', 'popupPosts')));
     }
@@ -71,7 +71,7 @@ class Patio extends BaseController
      */
     public function franchise()
     {
-        $popupPosts = $this->repository->where(['category_id' => 4])->all();
+        $popupPosts = array_reverse($this->repository->where(['category_id' => 4])->all()->toArray());
         return Response::plain($this->view->render('franchise',
             compact('popupPosts')));
     }
@@ -81,7 +81,7 @@ class Patio extends BaseController
      */
     public function franchise_new()
     {
-        $popupPosts = $this->repository->where(['category_id' => 4])->all();
+        $popupPosts = array_reverse($this->repository->where(['category_id' => 4])->all()->toArray());
         return Response::plain($this->view->render('new_franchise',
             compact('popupPosts')));
     }
