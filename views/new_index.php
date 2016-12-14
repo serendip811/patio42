@@ -30,7 +30,11 @@ Template::setLayout('layout/new_master', [
     <div class="container">
         <div class="Event banner_area">
             <div class="slide">
-                <img src="/static/img/event1.jpeg" class="event-col event-col-0 active" width="325" height="372"></img>
+            <?php foreach ($newsPosts as $post) : ?>
+                <a href="<?php echo isset($post['extra']['link']) ? $post['extra']['link'] : ''?>" target="_blank" class="event-col event-col-0 active">
+                    <img src="/files<?php echo $post['thumbnail']['path']?>" width="325" height="372"></img>
+                </a>
+            <?php endforeach ?>
             </div>
         </div>
         <div class="Menu banner_area">
