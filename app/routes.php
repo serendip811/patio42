@@ -11,6 +11,7 @@ return function (Router $router) {
     $router->get('/franchise', 'franchise@Patio');
     $router->get('/franchise_new', 'franchise_new@Patio');
     $router->get('/store_popup/{id}', 'store_popup@Patio');
+    $router->post('/consulting', 'consulting@Patio');
     $router->group(['prefix' => '/admin', 'middleware' => ['auth@Admin']], function (Router $router) {
         $router->group('/ajax', function (Router $router) {
             $router->get('/categories', 'ajaxList@Admin.Category');

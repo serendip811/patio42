@@ -4,6 +4,7 @@ namespace Wandu\Publ\Controller;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Wandu\Publ\Response\Response;
+use Wandu\Publ\Facade\Input;
 
 class Patio extends BaseController
 {
@@ -92,5 +93,26 @@ class Patio extends BaseController
         $post = $this->repository->where(['id' => $id])->one();
         return Response::plain($this->view->render('store_popup',
             compact('post')));
+    }
+
+    public function consulting(ServerRequestInterface $request)
+    {
+        $name = Input::fromBody('name');
+        $tel1 = Input::fromBody('tel1');
+        $tel2 = Input::fromBody('tel2');
+        $tel3 = Input::fromBody('tel3');
+        $contents = Input::fromBody('contents');
+
+        $headers = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+        $message = "파티오 창업상담 알림<br/><br/>";
+        $message.= "이름 : ".$name." <br/>";
+        $message.= "연락처 : ".$tel1."-".$tel2."-".$tel3." <br/>";
+        $message.= "<br/>";
+        $message.= "<pre>".$contents."</pre>";
+
+        mail("serendip@neowiz.com", "[파티오 창업상담] ".$name, $message, $headers);
+        return Response::redirect("/");
     }
 }

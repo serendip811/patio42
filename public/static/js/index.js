@@ -63,6 +63,33 @@
             $('div.popup').removeClass('active');
             $('body').removeClass('disabled');
         });
+
+        $('#btn_submit').on('click', function(e) {
+            e.preventDefault();
+            var name = $("#consulting_form [name=name]").val();
+            var tel1 = $("#consulting_form [name=tel1]").val();
+            var tel2 = $("#consulting_form [name=tel2]").val();
+            var tel3 = $("#consulting_form [name=tel3]").val();
+            var contents = $("#consulting_form [name=contents]").val();
+            if(!name){
+                alert("이름을 입력해주세요.");
+                return ;
+            }
+            if(!tel1 || !tel2 || !tel3){
+                alert("전화번호를 입력해주세요.");
+                return ;
+            }
+            if(!contents){
+                alert("내용을 입력해주세요.");
+                return ;
+            }
+            if(!contents.trim()){
+                alert("내용을 입력해주세요.");
+                return ;
+            }
+
+            $('#consulting_form').submit();
+        });
     },
     toggleStoreCategory = function () {
         $('#StoreCategories').toggleClass('active');

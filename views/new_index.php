@@ -38,19 +38,30 @@ Template::setLayout('layout/new_master', [
                 <a class="button button-menu-prev">prev image</a>
                 <a class="button button-menu-next">next image</a>
             </div>
+            <a href="/detail#MenuLinks">
             <div class="slide">
-                <img src="/static/img/menu1.png" class="menu-col menu-col-0 active" width="251" height="214"></img>
-                <img src="/static/img/menu2.png" class="menu-col menu-col-1" width="251" height="214"></img>
+                <img src="/static/img/menu1.jpg" class="menu-col menu-col-0 active" width="251" height="214"></img>
+                <img src="/static/img/menu2.jpg" class="menu-col menu-col-1" width="251" height="214"></img>
+                <img src="/static/img/menu3.jpg" class="menu-col menu-col-1" width="251" height="214"></img>
+                <img src="/static/img/menu4.jpg" class="menu-col menu-col-1" width="251" height="214"></img>
+                <img src="/static/img/menu5.jpg" class="menu-col menu-col-1" width="251" height="214"></img>
+                <img src="/static/img/menu6.jpg" class="menu-col menu-col-1" width="251" height="214"></img>
             </div>
+            </a>
         </div>
         <div class="Store banner_area">
             <div class="new_store">
                 <div class="slide">
+                <?php foreach ($storePosts as $idx => $post) : ?>
                     <div class="store-col store-col-0 active">
-                        <img src="http://patio42.co.kr/files/post_YpUTGF.jpg"/>
-                        <div class="store_title">강남구청점</div>
-                        <div class="address">서울특별시 강남구 학동로56길 26<br>02-6200-6642</div>
+                        <img alt="<?php echo $post['thumbnail']['name']; ?>" src="files<?php echo $post['thumbnail']['path']; ?>"/>
+                        <div class="store_title"><?php echo isset($post['title']) ? $post['title'] : ''; ?></div>
+                        <div class="address"><?php echo isset($post['extra']['store']['address']) ?
+                            $post['extra']['store']['address'] : ''; ?><br><?php echo isset($post['extra']['store']['phone']) ?
+                            $post['extra']['store']['phone'] : ''; ?></div>
                     </div>
+                <?php endforeach; ?>
+
                 </div>
                 <div class="controller">
                     <a class="button button-store-prev">prev image</a>
@@ -70,21 +81,21 @@ Template::setLayout('layout/new_master', [
         </div>
         <div class="Franchise banner_area">
             <h2>빠른창업상담</h2>
-            <form>
+            <form action="/consulting" method="post" id="consulting_form">
                 <table>
                     <tr>
                         <td class="label">이름</td>
-                        <td class="value"><input type="text" class="input1"/></td>
+                        <td class="value"><input type="text" class="input1" name="name"/></td>
                     </tr>
                     <tr>
                         <td class="label">연락처</td>
-                        <td class="value"><input type="text" class="input2"/>-<input type="text" class="input2"/>-<input type="text" class="input2"/></td>
+                        <td class="value"><input type="text" class="input2" name="tel1"/>-<input type="text" class="input2" name="tel2"/>-<input type="text" class="input2" name="tel3"/></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><textarea rows="5" placeholder="상담내용을 입력하세요.(창업 희망지역 등)"></textarea></td>
+                        <td colspan="2"><textarea rows="5" placeholder="상담내용을 입력하세요.(창업 희망지역 등)"  name="contents"></textarea></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="image" id="btn_submit" src="/static/img/btn_write1.png" border="0" accesskey="s"></td>
+                        <td colspan="2"><input onclick="void(0);" type="image" id="btn_submit" src="/static/img/btn_write1.png" border="0"></td>
                     </tr>
                 </table>
             </form>
