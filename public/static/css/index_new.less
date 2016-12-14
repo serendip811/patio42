@@ -68,7 +68,7 @@ body.disabled {
             }
         }
         div.Menu{
-            background: url(http://www.raracost.com/img/main/s_b2_bg.gif) no-repeat;
+            background: url(http://www.raracost.com/img/main/s_b2_o.gif) no-repeat;
             div.slide {
                 position:relative;
                 margin: 79px 36px;
@@ -264,6 +264,9 @@ body.disabled {
             }
         }
         div.Franchise {
+           .screen-sm({
+                display:none;
+            });
             height: 370px;
             border: 1px solid #CCC;
             h2 {
@@ -1345,7 +1348,12 @@ body.disabled {
                 .screen-md({
                     height: 850px;
                 });
-                background: no-repeat center center fixed; 
+                .screen-sm({
+                    background:;
+                });
+                .screen-md({
+                    background: no-repeat center center fixed; 
+                });
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
