@@ -231,7 +231,6 @@ Template::setLayout('layout/new_master', [
                 <div class="td td-etc"></div>
             </div>
         </div>
-        </div>
         <div class="table table-thepan">
             <div class="th">
                 <div class="td td-title">구분</div>
