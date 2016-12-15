@@ -33,7 +33,7 @@
             prevButton: $('a.button-store-prev')
         });
 
-        $('#StoreItems a.detail').bind('click', function() {
+        $('#StoreItems a.detail,#StoreItems2 a.detail').bind('click', function() {
             var id = $(this).data('store-id');
             $.get( '/store_popup/'+id, function( data ) {
                 $("div.popups").html(data);

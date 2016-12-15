@@ -54,11 +54,13 @@ Template::setLayout('layout/new_master', [
             </a>
         </div>
         <div class="Store banner_area">
-            <div class="new_store">
+            <div class="new_store" id="StoreItems2">
                 <div class="slide">
                 <?php foreach ($storePosts as $idx => $post) : ?>
                     <div class="store-col store-col-0 active">
-                        <img alt="<?php echo $post['thumbnail']['name']; ?>" src="files<?php echo $post['thumbnail']['path']; ?>"/>
+                        <a class="detail" data-store-id="<?php echo $post['id']; ?>">
+                            <img alt="<?php echo $post['thumbnail']['name']; ?>" src="files<?php echo $post['thumbnail']['path']; ?>"/>
+                        </a>
                         <div class="store_title"><?php echo isset($post['title']) ? $post['title'] : ''; ?></div>
                         <div class="address"><?php echo isset($post['extra']['store']['address']) ?
                             $post['extra']['store']['address'] : ''; ?><br><?php echo isset($post['extra']['store']['phone']) ?
