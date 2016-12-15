@@ -57,15 +57,15 @@ Template::setLayout('layout/new_master', [
             <div class="new_store" id="StoreItems2">
                 <div class="slide">
                 <?php foreach ($storePosts as $idx => $post) : ?>
-                    <div class="store-col store-col-0 active">
-                        <a class="detail" data-store-id="<?php echo $post['id']; ?>">
-                            <img alt="<?php echo $post['thumbnail']['name']; ?>" src="files<?php echo $post['thumbnail']['path']; ?>"/>
-                        </a>
-                        <div class="store_title"><?php echo isset($post['title']) ? $post['title'] : ''; ?></div>
-                        <div class="address"><?php echo isset($post['extra']['store']['address']) ?
-                            $post['extra']['store']['address'] : ''; ?><br><?php echo isset($post['extra']['store']['phone']) ?
-                            $post['extra']['store']['phone'] : ''; ?></div>
-                    </div>
+                    <a class="detail" data-store-id="<?php echo $post['id']; ?>">
+                        <div class="store-col store-col-0 active">
+                                <img alt="<?php echo $post['thumbnail']['name']; ?>" src="files<?php echo $post['thumbnail']['path']; ?>"/>
+                            <div class="store_title"><?php echo isset($post['title']) ? $post['title'] : ''; ?></div>
+                            <div class="address"><?php echo isset($post['extra']['store']['address']) ?
+                                $post['extra']['store']['address'] : ''; ?><br><?php echo isset($post['extra']['store']['phone']) ?
+                                $post['extra']['store']['phone'] : ''; ?></div>
+                        </div>
+                    </a>
                 <?php endforeach; ?>
 
                 </div>
