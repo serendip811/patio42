@@ -54,7 +54,7 @@ This web page has been developed by J.
     </ul>
     <ul>
         <li class="tab tab-about">
-            <a href="/new">HOME</a>
+            <a href="/">HOME</a>
         </li>
         <li class="tab tab-about">
             <a href="/detail#About">ABOUT</a>
@@ -63,7 +63,7 @@ This web page has been developed by J.
             <a href="/detail#Store">STORE</a>
         </li>
         <li class="tab tab-logo">
-            <a href="/new"><img src="/static/img/logo.png"/></a>
+            <a href="/"><img src="/static/img/logo.png"/></a>
         </li>
         <li class="tab tab-menu">
             <a href="/detail#MenuLinks">MENU</a>
