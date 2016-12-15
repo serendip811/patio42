@@ -114,6 +114,6 @@ class Patio extends BaseController
         $message.= "<br/><br/><br/>*홈페이지를 통해 자동 발송된 메일입니다.";
 
         mail("Patio42ap@naver.com", "[파티오 창업상담] ".$name, $message, $headers);
-        return Response::redirect("/new");
+        return Response::redirect("/");
     }
 }
