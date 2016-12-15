@@ -9,10 +9,10 @@ Template::setLayout('layout/new_master', [
         '/static/js/jquery.instashow.packaged.js',
         '/static/vendor/isotope/dist/isotope.pkgd.min.js',
         '/static/vendor/jquery.simpleslider/jquery.simpleslider.min.js',
-        '/static/js/popup.js?20160505',
+        '/static/js/popup.js?20161215',
         'http://openapi.map.naver.com/openapi/naverMap.naver?ver=2.0&key=31e4d5fd3ada24ea1057920a526149fb',
         '/static/js/map.js',
-        '/static/js/index.js?20160505'
+        '/static/js/index.js?20161215'
     ]
 ]);
 ?>
