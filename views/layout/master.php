@@ -43,19 +43,19 @@ This web page has been developed by J.
 <nav>
     <ul>
         <li class="tab tab-instagram">
-            <a href="/#Instagram">#INSTAGRAM</a>
+            <a href="/m#Instagram">#INSTAGRAM</a>
         </li>
         <li class="tab tab-about">
-            <a href="/#About">ABOUT</a>
+            <a href="/m#About">ABOUT</a>
         </li>
         <li class="tab tab-store">
-            <a href="/#Store">STORE</a>
+            <a href="/m#Store">STORE</a>
         </li>
         <li class="tab tab-menu">
-            <a href="/#MenuLinks">MENU</a>
+            <a href="/m#MenuLinks">MENU</a>
         </li>
         <li class="tab tab-news">
-            <a href="/#News">NEWS</a>
+            <a href="/m#News">NEWS</a>
         </li>
         <li class="tab tab-franchise">
             <a href="/franchise">FRANCHISE</a>
@@ -79,7 +79,7 @@ This web page has been developed by J.
 <?php $i = 0; ?>
 <?php foreach ($popupPosts as $key => $popupPost) :?>
 
-<section class="Popup active" name="popup_<?php echo $popupPost['id']; ?>" style="margin-left:<?php echo $i*420; ?>px;">
+<section class="Popup active" name="popup_<?php echo $popupPost['id']; ?>">
     <a class="close">x</a>
     <div class="container-popup">
         <div class="thumbnail">

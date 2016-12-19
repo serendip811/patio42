@@ -5,9 +5,9 @@ use Wandu\Router\Router;
 
 return function (Router $router) {
     $router->get('', 'new_index@Patio');
-    $router->get('/new', 'new_index@Patio');
+    $router->get('/m', 'index@Patio');
     $router->get('/detail', 'index_detail@Patio');
-    $router->get('/franchise', 'franchise_new@Patio');
+    $router->get('/franchise', 'franchise@Patio');
     $router->get('/franchise_new', 'franchise_new@Patio');
     $router->get('/store_popup/{id}', 'store_popup@Patio');
     $router->post('/consulting', 'consulting@Patio');
