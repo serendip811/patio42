@@ -100,6 +100,14 @@ Template::setLayout('layout/new_master', [
 <section id="MenuLinks">
     <h2>MENU</h2>
     <div class="row">
+        <div style="margin-left:17%;width:33%;height:15px;color:black;font-size:30px;float:left;">
+        압구정 본점
+        </div>
+        <div style="margin-right:16%;width:33%;height:15px;color:black;font-size:30px;float:left;">
+        가로수길 본점
+        </div>
+    </div>
+    <div class="row">
         <div class="links-col links-col-1">
             <div class="logo"><img src="/static/img/MenuLinks-logo-1.png"></div>
             <a class="view view-1" href="/files<?php echo $menuPosts[0]['thumbnail']['path']; ?>" target="_blank">VIEW MENU</a>
@@ -112,6 +120,11 @@ Template::setLayout('layout/new_master', [
             <div class="logo"><img src="/static/img/MenuLinks-logo-3.png"></div>
             <a class="view view-3" target="_blank">준비중입니다</a>
         </div-->
+    </div>
+    <div class="row" style="padding-top:15px; padding-bottom:15px;">
+        <span style="height:15px;color:black;font-size:15px">
+            * 각 매장마다 다를 수 있으니 각 매장에 문의 바랍니다.
+        </span>
     </div>
 </section>
 
