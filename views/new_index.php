@@ -44,7 +44,8 @@ Template::setLayout('layout/new_master', [
             </div>
             <a href="/detail#MenuLinks">
             <div class="slide">
-                <img src="/static/img/menu1.jpg" class="menu-col menu-col-0 active" width="251" height="214"></img>
+                <img src="/static/img/menu0.jpg" class="menu-col menu-col-0 active" width="251" height="214"></img>
+                <img src="/static/img/menu1.jpg" class="menu-col menu-col-1" width="251" height="214"></img>
                 <img src="/static/img/menu2.jpg" class="menu-col menu-col-1" width="251" height="214"></img>
                 <img src="/static/img/menu3.jpg" class="menu-col menu-col-1" width="251" height="214"></img>
                 <img src="/static/img/menu4.jpg" class="menu-col menu-col-1" width="251" height="214"></img>
@@ -79,9 +80,9 @@ Template::setLayout('layout/new_master', [
                 <p class="clear">파티오의 즐거운 이벤트와 새로운 소식을<br>파티오SNS에서 가장 빨리 만나보세요!</p>
                 <ul>
                     <li><a href="https://www.facebook.com/patio42" target="_blank"><img src="/static/img/f_sns1.gif" alt="페이스북"></a></li>
-                    <li><a href="javascript:alert('준비중입니다');" onfocus="this.blur()"><img src="/static/img/f_sns2.gif" alt="트위터"></a></li>
-                    <li><a href="javascript:alert('준비중입니다');" onfocus="this.blur()"><img src="/static/img/f_sns3.gif" alt="카카오스토리"></a></li>
-                    <li><a href="javascript:alert('준비중입니다');" onfocus="this.blur()"><img src="/static/img/f_sns4.gif" alt="인스타그램"></a></li>
+                    <!-- <li><a href="javascript:alert('준비중입니다');" onfocus="this.blur()"><img src="/static/img/f_sns2.gif" alt="트위터"></a></li> -->
+                    <!-- <li><a href="javascript:alert('준비중입니다');" onfocus="this.blur()"><img src="/static/img/f_sns3.gif" alt="카카오스토리"></a></li> -->
+                    <li><a href="https://www.instagram.com/patio_official/" onfocus="this.blur()"><img src="/static/img/f_sns4.gif" alt="인스타그램"></a></li>
                 </ul>
             </div>
         </div>
