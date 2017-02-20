@@ -3,7 +3,7 @@ use Wandu\Template\Syntax\Template;
 
 Template::setLayout('layout/master', [
     'cssFiles' => [
-        '/static/css/franchise.css?20161230'
+        '/static/css/franchise.css?20170221'
     ],
     'jsFiles' => [
         '/static/js/popup.js?20161230',
@@ -95,7 +95,7 @@ Template::setLayout('layout/master', [
         <div class="vat">&#91;vat 별도&#93;</div>
         <div class="change-cost">
             <div class="button button-patio active">
-                <a>PATIO42</a>
+                <a>PATIO42<br/><small>(이탈리안 레스토랑)</small><br/><small>30평이상</small></a>
             </div>
         </div>
         <div class="table table-patio active">
