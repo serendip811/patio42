@@ -12,66 +12,6 @@ Template::setLayout('layout/new_master', [
 ]);
 ?>
 
-<section id="about">
-<?php /*
-    <div class="change-franchise" style="background-color:white;">
-        <div class="button button-patio active">PATIO42</div>
-        <div class="button button-thepan">PATIO42 THE PAN</div>
-    </div>
-
-*/?>
-    <div class="container container-patio active">
-        <div class="title">PATIO42</div>
-        <div class="description">파티오42 디자인은 유행을 타지 않도록 엔틱과 모던의 명쾌한 조화로 이루어졌습니다.<br/>돌, 나무, 조명을 적절히 활용하여 우리집 앞마당(Patio) 같은 아늑함을 제공합니다.</div>
-        <div class="content">
-            <a class="about about-delicious">
-                <img src="/static/img/about-patio-1.jpg">
-            </a>
-            <div class="content-title content-title-delicious">
-                <div class="content-title-part part-delicious-1">파티오42는</div>
-                <div class="content-title-part part-delicious-2">맛있습니다.</div>
-            </div>
-            <div class="content-text content-text-delicious">너무 뻔한 이야기이지만, 가장 중요한 기준은 '맛'입니다. 파티오 42의 '맛'이 모든 가맹점에서 동일하게 유지됩니다.</div>
-            <a class="about about-handsome">
-                <img src="/static/img/about-patio-2.jpg">
-            </a>
-            <div class="content-title content-title-handsome">
-                <div class="content-title-part part-handsome-1">파티오42는</div>
-                <div class="content-title-part part-handsome-2">멋있습니다.</div>
-            </div>
-            <div class="content-text content-text-handsome">인테리어의 마지막은 '사람'입니다. 젊고 트렌디한 파티오42의 스텝과 손님 모두는 '멋'있습니다.</div>
-        </div>
-    </div>
-
-    <div class="container container-thepan">
-        <div class="title">Patio42 The Pan</div>
-        <div class="description">기존의 프리미엄급 파티오42 이탈리안 레스토랑이 아닌, 더 저렴하고 캐주얼하게 즐길 수 있는 피자 전문점과 스테이크 전문점으로 분리된 브랜드입니다.</div>
-        <div class="content">
-            <a class="about about-meat">
-                <img src="/static/img/about-thepan-1.jpg">
-            </a>
-            <div class="content-title content-title-meat">
-                <div class="content-title-part part-meat-1">Pan Steak</div><br/>
-                <div class="content-title-part part-meat-2">House</div><br/>
-                <div class="content-title-part part-meat-3">The Pan</div>
-            </div>
-            <div class="content-text content-text-meat">파티오42 더팬은 호주산 청정우를 파티오42만의 숙성 방식으로 부드럽고 높은 퀄리티로 유지합니다. 다양한 소스를 이용한 스테이크, 샐러드, 라이스가 그릴 팬 위에 세트로 구성됩니다. </div>
-            <a class="about about-pan">
-                <img src="/static/img/about-thepan-2.jpg">
-            </a>
-            <div class="content-title content-title-pan">
-                <div class="content-title-part part-pan-1">
-                    <img src="/static/img/logo-thepan.png">
-                </div>
-            </div>
-            <div class="content-text content-text-pan">10~30대를 타겟으로 한 캐주얼 팬스테이크 전문점으로, 다양한 소스들과 파티오42의 파스타, 피자 노하우를 더한 ‘가성비’를 최고치로 끌어올립니다.</div>
-        </div>
-    </div>  
-</section>
-
-<section id="picture" class="parallax" data-parallax="scroll" data-image-src="/static/img/parallax-store.jpg">
-</section>
-
 <section id="system">
     <div class="container">
         <div class="title">
@@ -86,7 +26,7 @@ Template::setLayout('layout/new_master', [
                     </a>
                     <div class="explain-title">함께하는 파티오42</div>
                     <a class="line"></a>
-                    <div class="explain-content">파티오42는 이탈리안 가정식 맛을 고수하면서 동시에 한국인들이 편하게 즐길 수 있는 맛, 가격, 분위기 등 고객만족의 감동을 제공하도록 최선을 다합니다.</div>
+                    <div class="explain-content">파티오42는 가맹점의 직원들을 본사에서 직접 채용지원 합니다. 본사와 가맹점의 가족 같은 관계유지와 전수창업의 안정화를 위하여 본사에서 직접 인재채용을 지원, 관리 합니다.</div>
                 </div>
                 <div class="explain explain-trust">
                     <a class="explain-logo">
@@ -155,13 +95,8 @@ Template::setLayout('layout/new_master', [
         <div class="vat">&#91;vat 별도&#93;</div>
         <div class="change-cost">
             <div class="button button-patio active">
-                <a>PATIO42</a>
+                <a>PATIO42<br/><small>(이탈리안 레스토랑)</small><br/><small>30평이상</small></a>
             </div>
-<?/*
-            <div class="button button-thepan">
-                <a>PATIO42 THE PAN</a>
-            </div>
-*/?>
         </div>
         <div class="table table-patio active">
             <div class="th">
@@ -228,6 +163,139 @@ Template::setLayout('layout/new_master', [
                 <div class="td td-title">합계</div>
                 <div class="td td-detail"></div>
                 <div class="td td-standard">14,000</div>
+                <div class="td td-etc"></div>
+            </div>
+        </div>
+        <div class="table table-thepan">
+            <div class="th">
+                <div class="td td-title">구분</div>
+                <div class="td td-detail">세부내역</div>
+                <div class="td td-standard">30평 기준</div>
+                <div class="td td-etc">비고</div>
+            </div>
+            <div class="tr">
+                <div class="td td-title">가맹비</div>
+                <div class="td td-detail">상호/상표 사용 및 지역별 영업권 보호 경영 노하우 전수</div>
+                <div class="td td-standard">600</div>
+                <div class="td td-etc"></div>
+            </div>
+            <div class="tr">
+                <div class="td td-title">교육비</div>
+                <div class="td td-detail">주방 조리 교육 및 레시피 전수 / 홀 서비스 교육</div>
+                <div class="td td-standard">400</div>
+                <div class="td td-etc"></div>
+            </div>
+            <div class="tr">
+                <div class="td td-title">인테리어비</div>
+                <div class="td td-detail">실내 인테리어, 목공사, 타일, 주방, 전기, 조명, 가구 등</div>
+                <div class="td td-standard">5,400</div>
+                <div class="td td-etc">평당 180</div>
+            </div>
+            <div class="tr">
+                <div class="td td-title">가구류</div>
+                <div class="td td-detail">의자, 탁자, 붙박이 시트 등</div>
+                <div class="td td-standard">800</div>
+                <div class="td td-etc">야외용 별도</div>
+            </div>
+            <div class="tr">
+                <div class="td td-title">주방 설비</div>
+                <div class="td td-detail">냉동냉장고, 토핑, 식기세척기, 피자 오븐, 화구 등</div>
+                <div class="td td-standard">2,500</div>
+                <div class="td td-etc"></div>
+            </div>
+            <div class="tr">
+                <div class="td td-title">주방 집기 / 홀 물품</div>
+                <div class="td td-detail">접시, 각종 조리기구, 홀 용품 및 판촉물</div>
+                <div class="td td-standard">1,800</div>
+                <div class="td td-etc"></div>
+            </div>
+            <div class="tr tr-pos">
+                <div class="td td-title">POS</div>
+                <div class="td td-detail">듀얼모니터, 본체, 프린터, 금전통, 사인패드, 카드체크기 등</div>
+                <div class="td td-standard">무상지원</div>
+                <div class="td td-etc">지원</div>
+            </div>
+            <div class="tr">
+                <div class="td td-title">이행 보증금</div>
+                <div class="td td-detail">계약 이행 보증금</div>
+                <div class="td td-standard">200</div>
+                <div class="td td-etc">계약 종료시 환급</div>
+            </div>
+            <div class="tr tr-result">
+                <div class="td td-title">합계</div>
+                <div class="td td-detail"></div>
+                <div class="td td-standard">11,400</div>
+                <div class="td td-etc"></div>
+            </div>
+        </div>
+        <div class="optional"><a>&#42;</a> Optional &#58; 간판, 철거, 어닝, 외장, D/P, 전기 증설, 가스, 소방, 냉난방기, 온수 보일러 등은  매장 실측 후 필요 유무에 따라 추가 산정됨</div>
+    </div>
+    <div class="container">
+        <div class="vat">&#91;vat 별도&#93;</div>
+        <div class="change-cost">
+            <div class="button button-patio active">
+                <a>PATIO42 피제리아<br/><small>(화덕피자 전문)</small><br/><small>30평이하</small></a>
+            </div>
+        </div>
+        <div class="table table-patio active">
+            <div class="th">
+                <div class="td td-title">구분</div>
+                <div class="td td-detail">세부내역</div>
+                <div class="td td-standard">20평 기준</div>
+                <div class="td td-etc">비고</div>
+            </div>
+            <div class="tr">
+                <div class="td td-title">가맹비</div>
+                <div class="td td-detail">상호/상표 사용 및 지역별 영업권 보호<br/><br/><hr style="border-bottom: 1px solid #D5D5D5;border-top: none;" /><br/>경영 노하우 전수</div>
+                <div class="td td-standard">600</div>
+                <div class="td td-etc"></div>
+            </div>
+            <div class="tr">
+                <div class="td td-title">교육비</div>
+                <div class="td td-detail">주방 조리 교육 및 레시피 전수 / 홀 서비스 교육</div>
+                <div class="td td-standard">600</div>
+                <div class="td td-etc">전수 창업</div>
+            </div>
+            <div class="tr">
+                <div class="td td-title">인테리어비</div>
+                <div class="td td-detail">실내 인테리어, 목공사, 타일, 주방, 전기, 조명, 가구 등</div>
+                <div class="td td-standard">4,200</div>
+                <div class="td td-etc">평당 210</div>
+            </div>
+            <div class="tr">
+                <div class="td td-title">가구류</div>
+                <div class="td td-detail">의자, 탁자, 붙박이 시트 등</div>
+                <div class="td td-standard">600</div>
+                <div class="td td-etc">야외용 별도</div>
+            </div>
+            <div class="tr">
+                <div class="td td-title">주방 설비<br/><br/><br/><br/>주방 집기 / 홀 물품</div>
+                <div class="td td-detail">냉동냉장고, 토핑, 식기세척기, 화기, 접시류 등<br/><br/><hr style="border-bottom: 1px solid #D5D5D5;border-top: none;"/><br/>커피머신, 접시, 각종 조리기구, 홀 용품 등</div>
+                <div class="td td-standard">2,000<br/><br/><br/><br/>600</div>
+                <div class="td td-etc"></div>
+            </div>
+            <div class="tr">
+                <div class="td td-title">M42 마케팅</div>
+                <div class="td td-detail">오픈 키워드, 블로그, 바이럴 마케팅</div>
+                <div class="td td-standard">-</div>
+                <div class="td td-etc"></div>
+            </div>
+            <div class="tr tr-pos">
+                <div class="td td-title">POS</div>
+                <div class="td td-detail">듀얼모니터, 본체, 프린터, 금전통, 사인패드, 카드체크기 등</div>
+                <div class="td td-standard">무상지원</div>
+                <div class="td td-etc">지원</div>
+            </div>
+            <div class="tr">
+                <div class="td td-title">이행 보증금</div>
+                <div class="td td-detail">계약 이행 보증금</div>
+                <div class="td td-standard">200</div>
+                <div class="td td-etc">계약 종료시 환급</div>
+            </div>
+            <div class="tr tr-result">
+                <div class="td td-title">합계</div>
+                <div class="td td-detail"></div>
+                <div class="td td-standard">8,800</div>
                 <div class="td td-etc"></div>
             </div>
         </div>
