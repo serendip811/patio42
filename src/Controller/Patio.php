@@ -15,7 +15,7 @@ class Patio extends BaseController
     {
         $newsPosts = array_reverse($this->repository->where(['category_id' => 1])->all()->toArray());
         $pressPosts = $this->repository->where(['category_id' => 2])->all();
-        $storePosts = $this->repository->where(['category_id' => 3])->all();
+        $storePosts = $this->repository->where(['category_id' => 3])->orderBy(['id' => true])->all();
         $popupPosts = array_reverse($this->repository->where(['category_id' => 4])->all()->toArray());
         $menuPosts = $this->repository->where(['category_id' => 5])->all();
         return Response::plain($this->view->render('index',
@@ -37,7 +37,7 @@ class Patio extends BaseController
 
         $newsPosts = array_reverse($this->repository->where(['category_id' => 1])->all()->toArray());
         $pressPosts = $this->repository->where(['category_id' => 2])->all();
-        $storePosts = $this->repository->where(['category_id' => 3])->all();
+        $storePosts = $this->repository->where(['category_id' => 3])->orderBy(['id' => true])->all();
         $popupPosts = array_reverse($this->repository->where(['category_id' => 4])->all()->toArray());
         $menuPosts = $this->repository->where(['category_id' => 5])->all();
         return Response::plain($this->view->render('new_index',
