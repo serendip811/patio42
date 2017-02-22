@@ -3,7 +3,7 @@ use Wandu\Template\Syntax\Template;
 
 Template::setLayout('layout/master', [
     'cssFiles' => [
-        '/static/css/franchise.css?20170221'
+        '/static/css/franchise.css?20170222'
     ],
     'jsFiles' => [
         '/static/js/popup.js?20161230',
