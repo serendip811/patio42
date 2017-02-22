@@ -53,25 +53,25 @@ This web page has been developed by J.
         <li class="instagram"><a href="javascript:alert('준비중입니다');" onfocus="this.blur()"><img src="/static/img/sns_04.png" alt="인스타그램"></a></li>
     </ul>
     <ul>
-        <li class="tab tab-about">
+        <li class="tab tab-about" data-kor="홈" data-eng="HOME">
             <a href="/">HOME</a>
         </li>
-        <li class="tab tab-about">
+        <li class="tab tab-about" data-kor="소개" data-eng="ABOUT">
             <a href="/detail#About">ABOUT</a>
         </li>
-        <li class="tab tab-store">
+        <li class="tab tab-store" data-kor="매장위치" data-eng="STORE">
             <a href="/detail#Store">STORE</a>
         </li>
         <li class="tab tab-logo">
             <a href="/"><img src="/static/img/logo.png"/></a>
         </li>
-        <li class="tab tab-menu">
+        <li class="tab tab-menu" data-kor="메뉴" data-eng="MENU">
             <a href="/detail#MenuLinks">MENU</a>
         </li>
-        <li class="tab tab-news">
+        <li class="tab tab-news" data-kor="소식" data-eng="NEWS">
             <a href="/detail#News">NEWS</a>
         </li>
-        <li class="tab tab-franchise">
+        <li class="tab tab-franchise" data-kor="가맹개설" data-eng="FRANCHISE">
             <a href="/franchise_new">FRANCHISE</a>
         </li>
     </ul>

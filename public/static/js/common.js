@@ -3,6 +3,15 @@
     initialize = function () {
         $('div.nav-toggle, nav a').bind('click', addMenuExpand);
         $(window).bind('scroll', addMenuTop);
+        $("nav .tab").width("70px");
+        $("nav .tab").mouseover(function(that){
+            var kor = $(this).data("kor");
+            $(this).find("a").text(kor);
+        });
+        $("nav .tab").mouseout(function(that){
+            var eng = $(this).data("eng");
+            $(this).find("a").text(eng);
+        });
     },
 
     // 메뉴 토글버튼으로 navigation 끄고 켜기. (mobile)
