@@ -42,22 +42,22 @@ This web page has been developed by J.
 </script>
 <nav>
     <ul>
-        <li class="tab tab-instagram">
+        <li class="tab tab-instagram" data-kor="인스타그램" data-eng="#INSTAGRAM">
             <a href="/m#Instagram">#INSTAGRAM</a>
         </li>
-        <li class="tab tab-about">
+        <li class="tab tab-about" data-kor="소개" data-eng="ABOUT">
             <a href="/m#About">ABOUT</a>
         </li>
-        <li class="tab tab-store">
+        <li class="tab tab-store" data-kor="매장" data-eng="STORE">
             <a href="/m#Store">STORE</a>
         </li>
-        <li class="tab tab-menu">
+        <li class="tab tab-menu" data-kor="메뉴" data-eng="MENU">
             <a href="/m#MenuLinks">MENU</a>
         </li>
-        <li class="tab tab-news">
+        <li class="tab tab-news" data-kor="소식" data-eng="NEWS">
             <a href="/m#News">NEWS</a>
         </li>
-        <li class="tab tab-franchise">
+        <li class="tab tab-franchise" data-kor="창업" data-eng="FRANCHISE">
             <a href="/franchise">FRANCHISE</a>
         </li>
     </ul>

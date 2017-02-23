@@ -59,7 +59,7 @@ This web page has been developed by J.
         <li class="tab tab-about" data-kor="소개" data-eng="ABOUT">
             <a href="/detail#About">ABOUT</a>
         </li>
-        <li class="tab tab-store" data-kor="매장위치" data-eng="STORE">
+        <li class="tab tab-store" data-kor="매장" data-eng="STORE">
             <a href="/detail#Store">STORE</a>
         </li>
         <li class="tab tab-logo">
@@ -71,7 +71,7 @@ This web page has been developed by J.
         <li class="tab tab-news" data-kor="소식" data-eng="NEWS">
             <a href="/detail#News">NEWS</a>
         </li>
-        <li class="tab tab-franchise" data-kor="가맹개설" data-eng="FRANCHISE">
+        <li class="tab tab-franchise" data-kor="창업" data-eng="FRANCHISE">
             <a href="/franchise_new">FRANCHISE</a>
         </li>
     </ul>

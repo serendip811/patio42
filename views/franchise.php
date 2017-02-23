@@ -12,6 +12,14 @@ Template::setLayout('layout/master', [
 ]);
 ?>
 
+<section id="newimg">
+    <div class="container">
+        <img src="/static/img/f1.jpg" width="100%" />
+        <img src="/static/img/f2.jpg" width="100%" />
+        <img src="/static/img/f3.jpg" width="100%" />
+    </div>
+</section>
+
 <section id="system">
     <div class="container">
         <div class="title">
@@ -246,7 +254,7 @@ Template::setLayout('layout/master', [
             </div>
             <div class="tr">
                 <div class="td td-title">가맹비</div>
-                <div class="td td-detail">상호/상표 사용 및 지역별 영업권 보호<br/><br/><hr style="border-bottom: 1px solid #D5D5D5;border-top: none;" /><br/>경영 노하우 전수</div>
+                <div class="td td-detail">상호/상표 사용 및 지역별 영업권 보호<br/>경영 노하우 전수</div>
                 <div class="td td-standard">600</div>
                 <div class="td td-etc"></div>
             </div>
@@ -269,9 +277,15 @@ Template::setLayout('layout/master', [
                 <div class="td td-etc">야외용 별도</div>
             </div>
             <div class="tr">
-                <div class="td td-title">주방 설비<br/><br/><br/><br/>주방 집기 / 홀 물품</div>
-                <div class="td td-detail">냉동냉장고, 토핑, 식기세척기, 화기, 접시류 등<br/><br/><hr style="border-bottom: 1px solid #D5D5D5;border-top: none;"/><br/>커피머신, 접시, 각종 조리기구, 홀 용품 등</div>
-                <div class="td td-standard">2,000<br/><br/><br/><br/>600</div>
+                <div class="td td-title">주방 설비</div>
+                <div class="td td-detail">냉동냉장고, 토핑, 식기세척기, 화기, 접시류 등</div>
+                <div class="td td-standard">2,000</div>
+                <div class="td td-etc"></div>
+            </div>
+            <div class="tr">
+                <div class="td td-title">주방 집기 / 홀 물품</div>
+                <div class="td td-detail">커피머신, 접시, 각종 조리기구, 홀 용품 등</div>
+                <div class="td td-standard">600</div>
                 <div class="td td-etc"></div>
             </div>
             <div class="tr">
