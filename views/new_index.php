@@ -87,7 +87,8 @@ Template::setLayout('layout/new_master', [
             </div>
         </div>
         <div class="Franchise banner_area">
-            <h2>빠른창업상담 <small> <a href="/franchise_new" style="font-size: 15px; color: slategrey; text-decoration: underline;">[창업 바로가기]</a></small></h2>
+<div style="padding-top:10px;"><a href="/franchise_new" style="font-size: 15px; color: red; text-decoration: underline;">[창업 바로가기 Click!]</a></div>
+            <h2 style="padding:10px 20px;">빠른창업상담 </h2>
             <form action="/consulting" method="post" id="consulting_form">
                 <table>
                     <tr>
