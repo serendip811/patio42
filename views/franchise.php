@@ -13,10 +13,10 @@ Template::setLayout('layout/master', [
 ?>
 
 <section id="newimg">
-    <div class="container">
-        <img src="/static/img/f1.jpg" width="100%" />
-        <img src="/static/img/f2.jpg" width="100%" />
-        <img src="/static/img/f3.jpg" width="100%" />
+    <div class="container" style="text-align:center;">
+        <img src="/static/img/f1.jpg" width="80%" />
+        <img src="/static/img/f2.jpg" width="80%" />
+        <img src="/static/img/f3.jpg" width="80%" />
     </div>
 </section>
 
