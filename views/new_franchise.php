@@ -378,6 +378,13 @@ Template::setLayout('layout/new_master', [
     </div>
 </section>
 
+<section id="newimg">
+    <div class="" style="text-align:center; padding:20px 0px;">
+        <img src="/static/img/loan.jpg" width="40%" />
+    </div>
+<br/>
+</section>
+
 <section id="mail">
     <div class="container">
         <div class="mail-content">가맹점 개설에 대한 상담을 원하시는 분들은 이메일<br/>또는 창업 담당 부서로 연락 부탁 드립니다.</div>
