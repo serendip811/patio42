@@ -43,14 +43,12 @@ Template::setLayout('layout/new_master', [
                 <a class="button button-menu-next">next image</a>
             </div>
             <a href="/detail#MenuLinks">
-            <div class="slide">
-                <img src="/static/img/menu0.jpg" class="menu-col menu-col-0 active" width="251" height="214"></img>
-                <img src="/static/img/menu1.jpg" class="menu-col menu-col-1" width="251" height="214"></img>
-                <img src="/static/img/menu2.jpg" class="menu-col menu-col-1" width="251" height="214"></img>
-                <img src="/static/img/menu3.jpg" class="menu-col menu-col-1" width="251" height="214"></img>
-                <img src="/static/img/menu4.jpg" class="menu-col menu-col-1" width="251" height="214"></img>
-                <img src="/static/img/menu5.jpg" class="menu-col menu-col-1" width="251" height="214"></img>
-                <img src="/static/img/menu6.jpg" class="menu-col menu-col-1" width="251" height="214"></img>
+            <div class="slide" style="margin: 56px 12px;">
+                <img src="/static/img/menu_2_3.jpg" class="menu-col menu-col-0 active" width="300" height="277"></img>
+                <img src="/static/img/menu_3_3.jpg" class="menu-col menu-col-1" width="300" height="277"></img>
+                <img src="/static/img/menu_4_3.jpg" class="menu-col menu-col-1" width="300" height="277"></img>
+                <img src="/static/img/menu_5_3.jpg" class="menu-col menu-col-1" width="300" height="277"></img>
+                <img src="/static/img/menu_6_3.jpg" class="menu-col menu-col-1" width="300" height="277"></img>
             </div>
             </a>
         </div>

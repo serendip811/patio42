@@ -104,10 +104,10 @@ Template::setLayout('layout/new_master', [
             <div class="logo"><img src="/static/img/MenuLinks-logo-1.png"></div>
             <a style="height:50px;" class="view view-1" href="/files<?php echo $menuPosts[0]['thumbnail']['path']; ?>" target="_blank">VIEW MENU<br/>압구정 본점</a>
         </div>
-        <div class="links-col links-col-2">
+        <!--div class="links-col links-col-2">
             <div class="logo" style="width:65%"><img src="/static/img/MenuLinks-logo-2-1.png"></div>
             <a style="height:50px;" class="view view-2" href="/files<?php echo $menuPosts[1]['thumbnail']['path']; ?>" target="_blank">VIEW MENU<br/>가로수길 본점</a>
-        </div>
+        </div-->
         <!--div class="links-col links-col-3">
             <div class="logo"><img src="/static/img/MenuLinks-logo-3.png"></div>
             <a class="view view-3" target="_blank">준비중입니다</a>
