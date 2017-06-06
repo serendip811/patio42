@@ -33,7 +33,7 @@ class Post extends BaseController
     {
         $page = Input::fromQuery('page', 1);
         $category = Input::fromQuery('category');
-        $postsBuilder = $this->repository->limit(($page - 1) * 10, 10)->orderBy(['id' => false]);
+        $postsBuilder = $this->repository->limit(($page - 1) * 10, 10)->orderBy(['sort' => true]);
         if (isset($category)) {
             $postsBuilder = $postsBuilder->where(['category_id' => $category]);
         }
@@ -51,7 +51,7 @@ class Post extends BaseController
         $last = Input::fromQuery('last', -1);
         $limit = Input::fromQuery('limit', 10);
         $category = Input::fromQuery('category');
-        $queryBuilder = $this->repository->orderBy(['id' => false])->limit(0, $limit);
+        $queryBuilder = $this->repository->orderBy(['sort' => true])->limit(0, $limit);
         if ($last > 0) {
             $queryBuilder = $queryBuilder->where([
                 'id' => ['<', $last]
@@ -99,6 +99,7 @@ class Post extends BaseController
 
         $title = Input::fromBody('title');
         $category = Input::fromBody('category');
+        $sort = Input::fromBody('sort');
         $contents = Input::fromBody('contents');
         $url = Input::fromBody('url');
         $link = Input::fromBody('link');
@@ -121,6 +122,7 @@ class Post extends BaseController
         $valuesToInsert = [
             'title' => $title,
             'category_id' => $category,
+            'sort' => $sort,
             'contents' => $contents,
             'extra' => [
                 'url' => $url,
@@ -164,7 +166,7 @@ class Post extends BaseController
     {
         $page = Input::fromQuery('page', 1);
         $category = Input::fromQuery('category');
-        $postsBuilder = $this->repository->limit(($page - 1) * 10, 10)->orderBy(['id' => false]);
+        $postsBuilder = $this->repository->limit(($page - 1) * 10, 10)->orderBy(['sort' => true]);
         if (isset($category)) {
             $postsBuilder = $postsBuilder->where(['category_id' => $category]);
         }
@@ -194,6 +196,7 @@ class Post extends BaseController
 
         $title = Input::fromBody('title');
         $category = Input::fromBody('category');
+        $sort = Input::fromBody('sort');
         $contents = Input::fromBody('contents');
         $url = Input::fromBody('url');
         $link = Input::fromBody('link');
@@ -217,6 +220,7 @@ class Post extends BaseController
         $valuesToUpdate = [
             'title' => $title,
             'category_id' => $category,
+            'sort' => $sort,
             'contents' => $contents,
             'extra' => [
                 'url' => $url,

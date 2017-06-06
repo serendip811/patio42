@@ -21,6 +21,12 @@ Template::setLayout('layout');
                     <label for="formCategory">Category</label>
                     <select id="formCategory" name="category" data-ajax="/admin/ajax/categories" data-value="<?php echo $post['category_id']?>"></select>
                 </div>
+
+                <div class="pure-control-group">
+                    <label for="formSort">Sort</label>
+                    <input id="formSort" type="text" name="sort" placeholder="1부터" autofocus value="<?php echo $post['sort']?>" />
+                </div>
+
                 <div class="textarea">
                     <label for="formContents">Contents</label>
                     <textarea id="formContents" name="contents"><?php echo $post['contents']?></textarea>

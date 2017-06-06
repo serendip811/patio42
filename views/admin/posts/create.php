@@ -23,6 +23,11 @@ Template::setLayout('layout');
                     </select>
                 </div>
 
+                <div class="pure-control-group">
+                    <label for="formSort">Sort</label>
+                    <input id="formSort" type="text" name="sort" placeholder="1부터" autofocus />
+                </div>
+
                 <div class="textarea">
                     <label for="formContents">Contents</label>
                     <textarea id="formContents" name="contents"></textarea>
