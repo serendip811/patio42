@@ -3,10 +3,12 @@ use Wandu\Template\Syntax\Template;
 
 Template::setLayout('layout/master', [
     'cssFiles' => [
-        '/static/css/index.css?20160905'
+        '/static/css/index.css?20160905',
+        '/static/css/simple-grid.min.css',
     ],
     'jsFiles' => [
-        '/static/js/jquery.instashow.packaged.js',
+        // '/static/js/jquery.instashow.packaged.js',
+        '/static/js/instagram.js',
         '/static/vendor/isotope/dist/isotope.pkgd.min.js',
         '/static/vendor/jquery.simpleslider/jquery.simpleslider.min.js',
         '/static/js/popup.js?20161231',
@@ -16,16 +18,71 @@ Template::setLayout('layout/master', [
     ]
 ]);
 ?>
-
+<style type="text/css">
+    #instagram-contents .row div {
+        width: 75px;
+        height:75px;
+    }
+    #instagram-contents .instashow-gallery-media-cover {
+        width:75px;
+        height:75px;
+    }
+@media (min-width: 768px){
+    #instagram-contents .row div {
+        width: 173.25px;
+        height:173.25px;
+    }
+    #instagram-contents .instashow-gallery-media-cover {
+        width:173.25px;
+        height:173.25px;
+    }
+}
+@media (min-width: 1320px){
+    #instagram-contents .row div {
+        width: 350px;
+        height:350px;
+    }
+    #instagram-contents .instashow-gallery-media-cover {
+        width:350px;
+        height:350px;
+    }
+}
+#instagram-contents .row div  img{
+    width: 100%;
+}
+#instagram-contents .instashow-gallery-media-cover {
+    background: rgba(33, 150, 243, 0.9);
+    position: absolute;
+    opacity: 0;
+    font-size: 10px;
+}
+#instagram-contents .instashow-gallery-media-cover .info{
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    z-index: 3;
+    width: 80%;
+    max-height: 80%;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: #fff;
+    transform: translateX(-50%) translateY(-40%);
+}
+#instagram-contents .instashow-gallery-media-cover .description{
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+</style>
 <section id="Instagram">
     <div class="container">
         <h2># INSTAGRAM</h2>
-        <div id="instagram-contents">
-            <div data-is data-is-api="http://www.stylistkelseysue.com/instashow/api/"
-                data-is-source="#patio42, #patioD, #파티오42, #파티오디, #파티오D"
-                data-is-speed="1000"
-                data-is-auto="5000">
-            </div>
+        <div id="instagram-contents" style="width:1400px;">
         </div>
     </div>
 </section>

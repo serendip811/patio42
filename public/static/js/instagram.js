@@ -31,9 +31,12 @@
             url = url + "?last=" + last;
 
         $.get( url, function( data ) {
+            var row;
             for (feed_idx in data){
                 var feed = data[feed_idx];
-                $("#instagram-contents .row").append('<div class="col-3"><a target="_blank" href="https://www.instagram.com/p/'+feed.extra.code+'"><span class="instashow-gallery-media-cover"><div><span class="info"><span class="description">'+decodeURIComponent(feed.contents).replace(/\+/g, " ")+'</span></span></div></span><img src="'+feed.extra.thumbnail_src+'"/></a></div>');
+                if(feed_idx%4 == 0)
+                    row = $("#instagram-contents").append('<div class="row"></div>');                   
+                $("#instagram-contents .row:last").append('<div class="col-3"><a target="_blank" href="https://www.instagram.com/p/'+feed.extra.code+'"><span class="instashow-gallery-media-cover"><div><span class="info"><span class="description">'+decodeURIComponent(feed.contents).replace(/\+/g, " ")+'</span></span></div></span><img src="'+feed.extra.thumbnail_src+'"/></a></div>');
             }
         });
     };

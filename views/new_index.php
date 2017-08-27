@@ -113,9 +113,33 @@ Template::setLayout('layout/new_master', [
     
 </section>
 <style type="text/css">
-#instagram-contents .row div {
-    width: 350px;
-    height:350px;
+    #instagram-contents .row div {
+        width: 75px;
+        height:75px;
+    }
+    #instagram-contents .instashow-gallery-media-cover {
+        width:75px;
+        height:75px;
+    }
+@media (min-width: 768px){
+    #instagram-contents .row div {
+        width: 173.25px;
+        height:173.25px;
+    }
+    #instagram-contents .instashow-gallery-media-cover {
+        width:173.25px;
+        height:173.25px;
+    }
+}
+@media (min-width: 1320px){
+    #instagram-contents .row div {
+        width: 350px;
+        height:350px;
+    }
+    #instagram-contents .instashow-gallery-media-cover {
+        width:350px;
+        height:350px;
+    }
 }
 #instagram-contents .row div  img{
     width: 100%;
@@ -129,7 +153,7 @@ Template::setLayout('layout/new_master', [
     font-size: 10px;
 }
 #instagram-contents .instashow-gallery-media-cover .info{
-    display: block;
+    display: inline-block;
     position: absolute;
     z-index: 3;
     width: 80%;
@@ -139,6 +163,7 @@ Template::setLayout('layout/new_master', [
     text-align: center;
     color: #fff;
     transform: translateX(-50%) translateY(-40%);
+    overflow: hidden;
 }
 #instagram-contents .instashow-gallery-media-cover .description{
     border-top: none;
@@ -147,7 +172,7 @@ Template::setLayout('layout/new_master', [
     border-left: none;
     margin: 0;
     padding: 0;
-    display: block;
+    display: inline-block;
     overflow: hidden;
     font-size: 14px;
 }
