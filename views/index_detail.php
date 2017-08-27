@@ -21,8 +21,8 @@ Template::setLayout('layout/new_master', [
     <div class="container">
         <div class="header">
             <div class="header-col header-col-0 active" style="background-image :url(/static/img/bg1.jpeg)"></div>
-            <div class="header-col header-col-1" style="background-image :url(/static/img/bg2.jpeg)">
-            </div>
+            <div class="header-col header-col-1" style="background-image :url(/static/img/bg3.jpg)"></div>
+            <div class="header-col header-col-2" style="background-image :url(/static/img/bg4.jpg)"></div>
         </div>
     </div>
 </section>
@@ -66,10 +66,11 @@ Template::setLayout('layout/new_master', [
         <h2>STORE</h2>
         <div id="StoreCategoriesMobile">All</div>
         <div id="StoreCategories" class="">
-            <div class="category active"><a data-filter="*">ALL</a></div>
-            <div class="category"><a data-filter=".origin">PATIO42</a></div>
+            <!--div class="category active"><a data-filter="*">ALL</a></div-->
+<style> #StoreCategories>.category:after {content:''} </style>
+            <div class="category active"><a data-filter=".origin">PATIO42</a></div>
             <!--div class="category"><a data-filter=".thepan">PATIO42 THE PAN</a></div-->
-            <div class="category category-last"><a data-filter=".patiod">PATIO D</a></div>
+            <!--div class="category category-last"><a data-filter=".patiod">PATIO D</a></div-->
         </div>
         <div id="StoreItems">
 <?php foreach ($storePosts as $idx => $post) : ?>

@@ -21,7 +21,8 @@ Template::setLayout('layout/new_master', [
     <div class="container">
         <div class="header">
             <div class="header-col header-col-0 active" style="background-image :url(/static/img/bg1.jpeg)"></div>
-            <div class="header-col header-col-1" style="background-image :url(/static/img/bg2.jpeg)"></div>
+            <div class="header-col header-col-1" style="background-image :url(/static/img/bg3.jpg)"></div>
+            <div class="header-col header-col-2" style="background-image :url(/static/img/bg4.jpg)"></div>
         </div>
     </div>
 </section>
