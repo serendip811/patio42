@@ -27,9 +27,9 @@ Template::setLayout('layout');
                     <input id="formSort" type="text" name="sort" placeholder="1부터" autofocus value="<?php echo $post['sort']?>" />
                 </div>
 
-                <div class="textarea">
+                <div class="textarea" >
                     <label for="formContents">Contents</label>
-                    <textarea id="formContents" name="contents"><?php echo $post['contents']?></textarea>
+                    <textarea id="formContents" name="contents"><?php echo $post['category_id']!=10?$post['contents']:urldecode($post['contents'])?></textarea>
                 </div>
 
                 <div class="pure-control-group pure-control-group-choice" data-category="[2]">
@@ -40,6 +40,11 @@ Template::setLayout('layout');
                 <div class="pure-control-group pure-control-group-choice" data-category="[1,2,4]">
                     <label for="formExtra2">Link</label>
                     <input id="formExtra2" type="text" name="link" placeholder="Link" value="<?php echo isset($post['extra']['link']) ? $post['extra']['link'] : ''?>" />
+                </div>
+
+                <div class="pure-control-group pure-control-group-choice" data-category="[10]">
+                    <label for="formExtra2">Link</label>
+                    <a target="_blank" href="<?php echo isset($post['extra']['code']) ? 'https://www.instagram.com/p/'.$post['extra']['code'] : ''?>"><?php echo isset($post['extra']['code']) ? 'https://www.instagram.com/p/'.$post['extra']['code'] : ''?></a>
                 </div>
 
                 <div class="pure-control-group pure-control-group-choice" data-category="[3]">
@@ -128,6 +133,14 @@ Template::setLayout('layout');
                     <label for="formThumbnail">Thumbnail</label>
                     <input id="formThumbnail" type="file" name="thumbnail" />
                     <label><input type="checkbox" name="thumbnailDelete" value="1" />삭제</label>
+                </div>
+
+                <div class="pure-control-group pure-control-group-choice" data-category="[10]">
+                    <div class="thumbnail">
+                    <?php if($post['extra']['thumbnail_src']) : ?>
+                        <img src="<?php echo $post['extra']['thumbnail_src']?>" alt="<?php echo $post['extra']['thumbnail_src']?>" />
+                    <?php endif; ?>
+                    </div>                
                 </div>
 
 <?php if (isset($post['thumbnail']) && isset($post['thumbnail']['path']) && isset($post['thumbnail']['name'])) : ?>

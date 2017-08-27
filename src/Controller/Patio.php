@@ -22,14 +22,6 @@ class Patio extends BaseController
             compact('newsPosts', 'pressPosts', 'storePosts', 'popupPosts', 'menuPosts')));
     }
 
-    public function insta()
-    {
-        $code = Input::fromQuery('code');
-        $myfile = fopen("insta_access_token", "w") or die("Unable to open file!");
-        fwrite($myfile, $code);
-        fclose($myfile);
-    }
-
     /**
      * @return ResponseInterface
      */

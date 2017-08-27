@@ -1,6 +1,7 @@
 <?php
 namespace Wandu\Publ;
 
+use Wandu\Publ\Controller\Batch;
 use Wandu\Publ\Controller\Administrator;
 use Wandu\Publ\Controller\Administrator\Category;
 use Wandu\Publ\Controller\Administrator\Post;
@@ -12,6 +13,9 @@ use Wandu\Standard\DI\ContainerInterface;
 return function (ContainerInterface $controller, Application $app) {
     $controller->singleton('Patio', function () use ($app) {
         return new Patio($app['view'], $app['repository.posts']);
+    });
+    $controller->singleton('Batch', function () use ($app) {
+        return new Batch($app['view'], $app['repository.posts']);
     });
     $controller->singleton('Middleware', function () use ($app) {
         return new Middleware($app, $app['session']);

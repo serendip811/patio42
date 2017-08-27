@@ -4,9 +4,10 @@ namespace Wandu\Publ;
 use Wandu\Router\Router;
 
 return function (Router $router) {
+    $router->get('/batch_instagram', 'instagram@Batch');
+    
     $router->get('', 'new_index@Patio');
     $router->get('/m', 'index@Patio');
-    $router->get('/insta_redirect', 'insta@Patio');
     $router->get('/detail', 'index_detail@Patio');
     $router->get('/franchise', 'franchise@Patio');
     $router->get('/franchise_new', 'franchise_new@Patio');
