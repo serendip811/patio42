@@ -22,6 +22,14 @@ class Patio extends BaseController
             compact('newsPosts', 'pressPosts', 'storePosts', 'popupPosts', 'menuPosts')));
     }
 
+    public function insta()
+    {
+        $code = Input::fromQuery('code');
+        $myfile = fopen("insta_access_token", "w") or die("Unable to open file!");
+        fwrite($myfile, $code);
+        fclose($myfile);
+    }
+
     /**
      * @return ResponseInterface
      */
@@ -33,6 +41,8 @@ class Patio extends BaseController
         if(Input::fromQuery('isMobile') === 'Y'){
             return Response::redirect("/m");
         }
+
+
 
 
         $newsPosts = array_reverse($this->repository->where(['category_id' => 1])->all()->toArray());
