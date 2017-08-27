@@ -4,9 +4,11 @@ use Wandu\Template\Syntax\Template;
 Template::setLayout('layout/new_master', [
     'cssFiles' => [
         '/static/css/index_new.css?20170201',
+        '/static/css/simple-grid.min.css',
     ],
     'jsFiles' => [
-        '/static/js/jquery.instashow.packaged.js',
+        // '/static/js/jquery.instashow.packaged.js',
+        '/static/js/instagram.js',
         '/static/vendor/isotope/dist/isotope.pkgd.min.js',
         '/static/vendor/jquery.simpleslider/jquery.simpleslider.min.js',
         '/static/js/popup.js?20170201',
@@ -110,16 +112,55 @@ Template::setLayout('layout/new_master', [
     </div>
     
 </section>
+<style type="text/css">
+#instagram-contents .row div {
+    width: 350px;
+    height:350px;
+}
+#instagram-contents .row div  img{
+    width: 100%;
+}
+#instagram-contents .instashow-gallery-media-cover {
+    background: rgba(33, 150, 243, 0.9);
+    width:350px;
+    height:350px;
+    position: absolute;
+    opacity: 0;
+    font-size: 10px;
+}
+#instagram-contents .instashow-gallery-media-cover .info{
+    display: block;
+    position: absolute;
+    z-index: 3;
+    width: 80%;
+    max-height: 80%;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: #fff;
+    transform: translateX(-50%) translateY(-40%);
+}
+#instagram-contents .instashow-gallery-media-cover .description{
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    font-size: 14px;
+}
+</style>
 
 <section id="Instagram">
     <div class="container">
         <h2># INSTAGRAM</h2>
-        <div id="instagram-contents">
-            <div data-is data-is-api="http://www.stylistkelseysue.com/instashow/api/"
-                data-is-source="#patio42, #patioD, #파티오42, #파티오디, #파티오D"
-                data-is-speed="1000"
-                data-is-auto="5000">
+
+        <div id="instagram-contents" style="width:1400px;">
+            <div class="row" >
             </div>
+
         </div>
     </div>
 </section>

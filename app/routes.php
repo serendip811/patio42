@@ -5,6 +5,7 @@ use Wandu\Router\Router;
 
 return function (Router $router) {
     $router->get('/batch_instagram', 'instagram@Batch');
+    $router->get('/batch_instagram_ajax', 'instagram_ajax@Batch');
     
     $router->get('', 'new_index@Patio');
     $router->get('/m', 'index@Patio');

@@ -29,6 +29,26 @@ class Batch extends BaseController
         $this->fileRoot = $filePath;
     }
 
+    public function instagram_ajax()
+    {
+        $last = Input::fromQuery('last', -1);
+        $limit = Input::fromQuery('limit', 12);
+        $category = 10;
+        $queryBuilder = $this->repository->orderBy(['title' => false])->limit(0, $limit);
+
+        // 여기 고치기 id로 하는게 아니니까...
+        if ($last > 0) {
+            $queryBuilder = $queryBuilder->where([
+                'title' => ['<', $last]
+            ]);
+        }
+        if (isset($category)) {
+            $queryBuilder = $queryBuilder->where(['category_id' => $category]);
+        }
+        return Response::ajax($queryBuilder->all()->toArray());
+    }
+
+
     /**
      * @return ResponseInterface
      */
