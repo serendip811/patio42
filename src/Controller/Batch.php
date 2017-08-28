@@ -32,7 +32,7 @@ class Batch extends BaseController
     public function instagram_ajax()
     {
         $last = Input::fromQuery('last', -1);
-        $limit = Input::fromQuery('limit', 12);
+        $limit = Input::fromQuery('limit', 8);
         $category = 10;
         $queryBuilder = $this->repository->orderBy(['title' => false])->limit(0, $limit);
 
