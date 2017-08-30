@@ -109,7 +109,7 @@ This web page has been developed by J.
             <a class="mail" href="mailto:patio42ap@naver.com"></a>
         </div>
         <address>서울특별시 강남구 논현로159길 10 대표: 김영일<br/>
-            Tel: 070-7783-9942  Email: patio42ap@naver.com</address>
+            Tel: 02-462-4244  Email: patio42ap@naver.com</address>
         <div class="copyright">&copy; 2015 PATIO42</div>
     </div>
 </footer>
